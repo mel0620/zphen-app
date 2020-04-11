@@ -1,0 +1,20 @@
+// app global css in SCSS form
+@import "./customs/customs-dir";
+
+.text-brand {
+    color: $brand;
+}
+
+.bg-brand {
+    background-color: $brand;
+}
+
+.bg-light {
+    background-color: $body-color;
+}
+
+.q-checkbox__bg {
+    border-width: 1px;
+    border-radius: 0;
+    background-color: $brand-light;
+}

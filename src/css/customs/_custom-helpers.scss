@@ -1,0 +1,31 @@
+.d-flex {
+    display: flex;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.unstyled {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.fw-regular {
+    font-weight: 400;
+}
+
+.text-link {
+    color: #00b1ff;
+    text-decoration: none !important;
+
+    &.italic {
+        font-style: italic;
+    }
+
+    &:hover {
+        color: #00b1ff;
+    }
+}
