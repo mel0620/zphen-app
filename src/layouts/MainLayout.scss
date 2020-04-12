@@ -177,6 +177,10 @@
                                     border-bottom: 0.0625rem solid #ececec;
                                     margin: 0.25rem 0.625rem;
 
+                                    &:last-child {
+                                        border-bottom: 0;
+                                    }
+
                                     &__preview {
                                         display: grid;
                                         grid-template-columns: auto auto;
@@ -187,7 +191,7 @@
                                             height: 3.75rem;
                                             background-color: #fff;
                                             border: 1px solid #d1d1d1;
-                                            // padding: 4px;
+                                            display: flex;
                                             img {
                                                 max-width: 100%;
                                                 height: auto;
@@ -243,6 +247,8 @@
                                                         border: 1px solid $brand;
                                                         background-color: $brand-light;
                                                         outline: none;
+                                                        position: relative;
+                                                        cursor: pointer;
 
                                                         .mdi {
                                                             color: $text-dark;
@@ -288,6 +294,7 @@
                                 border-bottom: 0;
                                 cursor: text;
                             }
+                            
                             .cart__action {
                                 background-color: $brand;
                                 border: 1px solid $brand;
@@ -296,6 +303,7 @@
                                 width: 100%;
                                 outline: none;
                                 transition: .3s box-shadow ease-in-out;
+                                cursor: pointer;
 
                                 &:focus {
                                     box-shadow: 0 0 0 2px rgba($brand, .5);

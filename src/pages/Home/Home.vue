@@ -211,13 +211,13 @@ export default {
                 prod_rating: 3.5
             },
             {
-                prod_name: 'Nikon D5600',
-                prod_desc: 'Adorama Nikon D5600 DSLR Camera w/DX 18-140mm f/3.5-56G ED VR Lens w/Premium Acc Bundle',
-                prod_img_url: 'https://static.bhphoto.com/images/images500x500/1484050840_1308819.jpg',
-                prod_price: '24,000',
-                prod_prev_price: '42,000',
-                prod_rating: 3.5
-            },
+				prod_name: 'Nitro 5',
+				prod_desc: 'Windows 10 Home Intel® Core™ i7-8750H processor Hexa-core 2.20 GHz',
+				prod_img_url: 'https://static.acer.com/up/Resource/Acer/Laptops/Nitro_5/Gallery/20190222/Acer-Nitro-5-AN515-54-photogallery-01.png',
+				prod_price: '30,000',
+                prod_prev_price: '50,000',
+                prod_rating: 4
+			},
             {
                 prod_name: 'Nikon D5600',
                 prod_desc: 'Adorama Nikon D5600 DSLR Camera w/DX 18-140mm f/3.5-56G ED VR Lens w/Premium Acc Bundle',
@@ -227,13 +227,13 @@ export default {
                 prod_rating: 3.5
             },
             {
-                prod_name: 'Nikon D5600',
-                prod_desc: 'Adorama Nikon D5600 DSLR Camera w/DX 18-140mm f/3.5-56G ED VR Lens w/Premium Acc Bundle',
-                prod_img_url: 'https://static.bhphoto.com/images/images500x500/1484050840_1308819.jpg',
-                prod_price: '24,000',
-                prod_prev_price: '42,000',
-                prod_rating: 3.5
-            },
+				prod_name: 'Nitro 5',
+				prod_desc: 'Windows 10 Home Intel® Core™ i7-8750H processor Hexa-core 2.20 GHz',
+				prod_img_url: 'https://static.acer.com/up/Resource/Acer/Laptops/Nitro_5/Gallery/20190222/Acer-Nitro-5-AN515-54-photogallery-01.png',
+				prod_price: '30,000',
+                prod_prev_price: '50,000',
+                prod_rating: 4
+			},
             {
                 prod_name: 'Nikon D5600',
                 prod_desc: 'Adorama Nikon D5600 DSLR Camera w/DX 18-140mm f/3.5-56G ED VR Lens w/Premium Acc Bundle',

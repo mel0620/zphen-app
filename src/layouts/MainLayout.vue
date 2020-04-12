@@ -31,7 +31,7 @@
 									<div class="cart__dropdown-menu">
 										<div class="cart__dropdown-header">
 											<q-checkbox dark v-model="is_select_all" dense color="primary" label="Select All(0) Items" />
-											<q-btn flat dense rounded icon="mdi-trash-can-outline"></q-btn>
+											<q-btn flat dense round icon="mdi-trash-can-outline"></q-btn>
 										</div>
 
 										<!-- IF NO ITEMS  -->
@@ -43,30 +43,30 @@
 										<!-- IF HAS ITEMS -->
 										<div class="cart__dropdown-content custom-scroll">
 											<div class="product-items">
-												<div v-for="n in 5" :key="n" class="product-item">
+												<div v-for="(cart, index) in cart_items" :key="index" class="product-item">
 													<div class="product-item__check">
-														<q-checkbox keep-color v-model="is_select_item_on_cart" dense color="brand" />
+														<q-checkbox keep-color v-model="cart.is_selected" dense color="brand" />
 													</div>
 													<div class="product-item__preview">
 														<div class="image-holder">
-															<img src="https://static.bhphoto.com/images/images500x500/1484050840_1308819.jpg" alt="">
+															<img :src="cart.prod_img_url" alt="">
 														</div>
 														<div class="prod-info">
 															<div class="prod-info__top">
-																<div class="prod-name">Nikon D5600</div>
-																<div class="prod-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nulla.</div>
+																<div class="prod-name">{{ cart.prod_name }}</div>
+																<div class="prod-desc">{{ cart.prod_desc }}</div>
 															</div>
 															<div class="prod-info__bottom">
 																<div class="price">
-																	<div class="price__current">₱ 5,600.00</div>
-																	<div class="price__prev">₱ 24,000.00</div>
+																	<div class="price__current">₱ {{ cart.prod_price }}</div>
+																	<div class="price__prev">₱ {{ cart.prod_prev_price }}</div>
 																</div>
 																<div class="counter">
-																	<button>
+																	<button v-ripple @click="cart.prod_quantity++">
 																		<i class="mdi mdi-plus"></i>
 																	</button>
-																	<input type="number" value="1">
-																	<button>
+																	<input type="number" :value="cart.prod_quantity">
+																	<button v-ripple @click="cart.prod_quantity--">
 																		<i class="mdi mdi-minus"></i>
 																	</button>
 																</div>
@@ -77,12 +77,13 @@
 											</div>
 										</div>
 										<div class="cart__dropdown-footer">
-											<div class="cart__total">TOTAL: ₱ 28,000.00</div>
+											<div class="cart__total">TOTAL: ₱ 54,000.00</div>
 
 											<!-- NO ITEMS ON CART -->
 											<!-- <button class="cart__action">ADD ITEMS TO PROCEED</button> -->
 
-											<button class="cart__action">PROCEED TO CHECKOUT</button>
+											<q-btn unelevated color="brand" class="full-width"  label="Proceed to checkout"></q-btn>
+											<!-- <button class="cart__action">PROCEED TO CHECKOUT</button> -->
 										</div>
 									</div>
 								</div>
@@ -216,6 +217,26 @@ export default {
 	data: () => ({
 		is_select_all: false,
 		is_select_item_on_cart: false,
+		cart_items: [
+			{
+				prod_name: 'Nikon D5600',
+				prod_desc: 'Adorama Nikon D5600 DSLR Camera w/DX 18-140mm f/3.5-56G ED VR Lens w/Premium Acc Bundle',
+				prod_price: '24,000',
+				prod_prev_price: '40,000',
+				prod_img_url: 'https://static.bhphoto.com/images/images500x500/1484050840_1308819.jpg',
+				is_selected: false,
+				prod_quantity: 0
+			},
+			{
+				prod_name: 'Nitro 5',
+				prod_desc: 'Windows 10 Home Intel® Core™ i7-8750H processor Hexa-core 2.20 GHz',
+				prod_price: '30,000',
+				prod_prev_price: '50,000',
+				prod_img_url: 'https://static.acer.com/up/Resource/Acer/Laptops/Nitro_5/Gallery/20190222/Acer-Nitro-5-AN515-54-photogallery-01.png',
+				is_selected: false,
+				prod_quantity: 0
+			},
+		],
 		customer_care_options: [
 			{ link_title: 'Help Center', link: ''},
 			{ link_title: 'How to Buy', link: ''},
@@ -234,6 +255,6 @@ export default {
 			{link_title: 'Press & Media', link: ''},
 			{link_title: 'Intellectual Property Protection', link: ''},
 		]
-	})
+	}),
 };
 </script>

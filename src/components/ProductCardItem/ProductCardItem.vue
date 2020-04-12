@@ -64,7 +64,8 @@ export default {
 
             img {
                 max-width: 100%;
-                height: auto;
+                min-height: 205px;
+                max-height: 205px;
                 object-fit: contain;
                 transform: scale(.9);
             }
@@ -75,7 +76,7 @@ export default {
         padding: toem(10px);
 
         .product-item__info {
-            line-height: toem(16px);
+            line-height: toem(18px);
             overflow: hidden;
 
             .product-item__name,
