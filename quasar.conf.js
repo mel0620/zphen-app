@@ -68,7 +68,8 @@ module.exports = function (/* ctx */) {
         'QItem',
         'QItemSection',
         'QItemLabel',
-        'QCheckbox'
+        'QCheckbox',
+        'QRating'
       ],
 
       directives: [

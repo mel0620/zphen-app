@@ -127,7 +127,7 @@
 			</q-toolbar>
 		</q-header>
 
-		<q-page-container class="bg-light">
+		<q-page-container style="padding-bottom: 3.125rem;" class="bg-light">
 			<router-view />
 		</q-page-container>
 
