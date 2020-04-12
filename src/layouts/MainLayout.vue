@@ -30,7 +30,7 @@
 									</a>
 									<div class="cart__dropdown-menu">
 										<div class="cart__dropdown-header">
-											<q-checkbox dark v-model="is_select_all" dense color="primary" label="Select All(0) Items" />
+											<q-checkbox dark v-model="is_select_all" dense color="primary" label="Select All(2) Items" />
 											<q-btn flat dense round icon="mdi-trash-can-outline"></q-btn>
 										</div>
 
