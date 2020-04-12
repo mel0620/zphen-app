@@ -44,7 +44,7 @@
 										<div class="cart__dropdown-content custom-scroll">
 											<div class="product-items">
 												<div v-for="(cart, index) in cart_items" :key="index" class="product-item">
-													<div class="product-item__check">
+													<div class="product-item__check d-flex">
 														<q-checkbox keep-color v-model="cart.is_selected" dense color="brand" />
 													</div>
 													<div class="product-item__preview">
