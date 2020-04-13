@@ -41,7 +41,7 @@
 
                     </div>
                     <div class="card-item__bottom-action">
-                        <a href="/vendor">Be a vendor</a>
+                        <a href="/be-a-vendor">Be a vendor</a>
                     </div>
                 </div>
                 <div class="card-item">

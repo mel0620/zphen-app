@@ -26,3 +26,22 @@
 .q-rating__icon {
     text-shadow: none;
 }
+
+.q-field--filled  {
+    &.q-filled--focused {
+        background-color: #fff;
+    }
+}
+
+.q-field--filled {
+    .q-field__control {
+        border-radius: 0;
+        background-color: $brand-light;
+    }
+}
+
+.q-field--filled .q-field__control:before {
+    border: 1px solid $brand;
+    opacity: 1;
+    background: transparent;
+}

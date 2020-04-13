@@ -1,0 +1,202 @@
+.vendor-page {
+    .c-card {
+        border-radius: 1.25rem;
+        background-color: #fff;
+    }
+
+    .banner {
+        padding: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+
+        &__header {
+            font-size: 3.125rem;
+            font-weight: 300;
+            color: $black;
+        }
+
+        &__tagline {
+            @extend .banner__header;
+        }
+    }
+
+    .register-and-login {
+        text-align: center;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+
+        .c-card {
+            padding: 1.5rem;
+        }
+
+        .header-text {
+            font-size: 1.5625rem;
+            color: $black;
+            margin-bottom: 0.5rem;
+        }
+
+        .caption {
+            font-weight: 300;
+            font-size: 1rem;
+            color: $black;
+        }
+
+        button {
+            margin-top: 1rem;
+            min-width: 24rem;
+        }
+    }
+
+    .steps {
+        margin-top: 2rem; 
+
+        .c-card {
+            padding: 2rem;
+        }
+
+        .header-text {
+            font-size: 3.125rem;
+            color: $black;
+            text-align: center;
+            font-weight: 300;
+
+            b {
+                font-weight: bold;
+            }
+        }
+
+        .stepper {
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            grid-gap: 4rem;
+            margin-top: 1rem;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+
+            &::after {
+                content: "";
+                height: 1px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 23%;
+                max-width: 600px;
+                background-color: $black;
+                margin: auto;
+                z-index: -1;
+            }
+
+            &__step {
+                max-width: 5rem;
+                text-align: center;
+
+                .stepper__number {
+                    color: $black;
+                    border: 1px solid $black;
+                    border-radius: 100%;
+                    width: 4.6875rem;
+                    height: 4.6875rem;
+                    font-size: 3.125rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #fff;
+                }
+
+                .stepper__label {
+                    font-size: 1.25rem;
+                    text-align: center;
+                    color: $black;
+                    line-height: 1.5625rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    .subsription {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+
+        .plan {
+            background-color: #fff;
+            padding: 1rem 1rem 2.2rem;
+
+            &__pricing {
+                border: 1px solid $brand;
+                background-color: $brand-light;
+                border-radius: 0.3125rem;
+                text-align: center;
+                min-height: 8.125rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .plan__free {
+                    font-size: 2.5rem;
+                    color: $black;
+                    font-weight: 300;
+
+                    b {
+                        font-weight: bold;
+                    }
+                }
+
+                .plan__price {
+
+                    &-value {
+                        font-weight: 300;
+                        color: $black;
+                        font-size: 1.5rem;
+                        line-height: 2.2rem;
+
+                        b {
+                            font-size: 2.5rem;
+                            font-weight: bold;
+                        }
+                    }
+
+                    &-subs {
+                        color: $black;
+                        font-size: 1.25rem;
+                        font-weight: 300;
+                        line-height: 1.4rem;
+                    }
+                }
+            }
+
+            &__features {
+                margin-top: 1.5rem;
+                min-height: 17.8125rem;
+
+                .plan__feature-list {
+                    color: $black;
+                    margin-left: 1rem;
+                    margin-bottom: 0.625rem;
+                    font-size: 1.25rem;
+                }
+            }
+
+            &__action {
+                margin-top: 1rem;
+                text-align: center;
+
+                .plan__caption {
+                    color: $black;
+                    padding: 0 2.2rem;
+                    font-weight: 300;
+                }
+
+                button {
+                    min-width: 17.5rem;
+                }
+            }
+        }
+    }
+}

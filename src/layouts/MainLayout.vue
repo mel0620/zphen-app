@@ -125,6 +125,49 @@
 						</div> -->
 					</div>
 				</div>
+				<div v-if="$route.path !== '/'" class="container">
+					<div class="header-toolbar-bottom">
+						<div @click="is_category_visible = !is_category_visible" class="dropdown-categories">
+							<div class="dropdown-category-cta bg-brand">
+								<span>CATEGORIES</span>
+								<i class="mdi mdi-menu-down"></i>
+							</div>
+							<div class="dropdown-category-content">
+								<ul @mouseover="is_sub_cat_visible = true" 
+									@mouseleave="is_sub_cat_visible = false" 
+									v-show="is_category_visible" 
+									class="categories__items custom-scroll"
+								>
+									<li v-for="(cat, index) in categories_options" :key="index" class="categories__item">
+										<a class="categories__item-link" href="javascript:">
+											<span class="text">{{ cat.cat_name }}</span>
+											<span class="mdi mdi-chevron-right"></span>
+										</a>
+									</li>
+									<ul class="sub-category custom-scroll" :class="is_sub_cat_visible ? 'active' : ''">
+										<li v-for="n in 20" :key="n" class="sub-category__item">
+											<a class="sub-categories__item-link" href="javascript:">
+												<span class="text">Sub category {{ n }}</span>
+											</a>
+										</li>
+									</ul>
+								</ul>
+							</div>
+						</div>
+						<div class="choose-location-wrapper d-flex items-center">
+							<div class="label text-brand">CHOOSE LOCATION:</div>
+							<q-select v-model="shipping_address_select" :options="['Login to select your shipping address:']" 
+							filled dense options-dense color="brand"></q-select>
+							<!-- <select class="z-input" name="" id="">
+								<option value="">Login to select your shipping address:</option>
+							</select> -->
+						</div>
+						<div class="other-actions">
+							<a href="/be-a-vendor">Be a Vendor</a>
+							<a href="/login">Sell used Items</a>
+						</div>
+					</div>
+				</div>
 			</q-toolbar>
 		</q-header>
 
@@ -215,8 +258,11 @@ import "./MainLayout.scss"
 export default {
 	name: "MainLayout",
 	data: () => ({
+		is_category_visible: false,
+		is_sub_cat_visible: false,
 		is_select_all: false,
 		is_select_item_on_cart: false,
+		shipping_address_select: 'Login to select your shipping address:',
 		cart_items: [
 			{
 				prod_name: 'Nikon D5600',
@@ -254,7 +300,41 @@ export default {
 			{link_title: 'Cookies Notice', link: ''},
 			{link_title: 'Press & Media', link: ''},
 			{link_title: 'Intellectual Property Protection', link: ''},
-		]
+		],
+		categories_options: [
+            { 
+                cat_name: 'Construction Materials',
+                sub_categories: [
+                    {
+                        sub_cat_name: 'Sub Category One'
+                    }
+                ]
+            },
+            { 
+                cat_name: 'Automotive',
+                sub_categories: [
+                    {
+                        sub_cat_name: 'Lorem'
+                    }
+                ]
+            },
+            { cat_name: 'Motorcycle'},
+            { cat_name: 'Computer'},
+            { cat_name: 'Farm & Gardening'},
+            { cat_name: 'Marine & Boating'},
+            { cat_name: 'Gym and Sports'},
+            { cat_name: 'Pet Accessories & Food'},
+            { cat_name: 'Camping'},
+            { cat_name: 'Home'},
+            { cat_name: 'Office'},
+            { cat_name: 'Manufacturing'},
+            { cat_name: 'Tools & Equipment'},
+            { cat_name: 'Cleaning Supplies'},
+            { cat_name: 'Painting Supplies'},
+            { cat_name: 'Welding'},
+            { cat_name: 'Chemicals'},
+            { cat_name: 'Medical Supplies'},
+        ],
 	}),
 };
 </script>

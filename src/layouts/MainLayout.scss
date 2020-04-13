@@ -1,5 +1,6 @@
 .main-header {
     background-color: #fff;
+    flex-direction: column;
 
     .hidden {
         display: none;
@@ -131,6 +132,7 @@
                         max-width: 18.75rem;
                         overflow: hidden;
                         display: none;
+                        z-index: 50;
 
                         .cart__dropdown-header {
                             background-color: $brand;
@@ -437,10 +439,13 @@
         padding: 10px 0;
         
         .dropdown-categories {
+            position: relative;
+
             .dropdown-category-cta {
                 padding: 4px 10px;
                 color: #fff;
-                min-width: 200px;
+                min-width: 218px;
+                max-width: 218px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -452,23 +457,121 @@
             }
 
             .dropdown-category-content {
+                position: absolute;
+                min-width: 218px;
+                max-width: 218px;
+                
+                .categories__items {
+                    max-height: 365px;
+                    left: 0;
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    background-color: #fff;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    border: 1px solid #eaeaea;
 
+                    .categories__item {
+                        border-bottom: 1px solid #eaeaea;
+                        padding: 0.125rem 0.625rem;
+                        cursor: pointer;
+                        position: relative;
+
+                        a {
+                            text-decoration: none;
+                            color: $text-dark;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            
+                            .mdi {
+                                opacity: 0;
+                                font-size: 1.125rem;
+                                margin-right: -0.4375rem;
+                            }
+                        }
+    
+                        &:hover {
+                            .categories__item-link {
+                                color: $brand;
+    
+                                .mdi {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+
+                        &:last-of-type {
+                            border-bottom: 0;
+                        }
+                    }
+                }
+
+                .sub-category {
+                    position: absolute;
+                    top: 0;
+                    right: -218px;
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    z-index: 50;
+                    max-height: 363px;
+                    min-width: 218px;
+                    max-width: 218px;
+                    background-color: #fff;
+                    visibility: hidden;
+                    border: 1px solid #eaeaea;
+                    border-left: 0;
+                    overflow: auto;
+    
+                    &.active {
+                        visibility: visible;
+                    }
+    
+                    &__item {
+                        border-bottom: 1px solid #eaeaea;
+                        padding: 0.375rem 0.625rem;
+                        cursor: pointer;
+
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                        
+                        a {
+                            color: $text-dark;
+                            text-decoration: none;
+                        }
+                    }
+                }
             }
         }
 
         .choose-location-wrapper {
             justify-self: center;
+            margin-right: 43px;
 
             .label {
                 white-space: nowrap;
                 margin-right: 8px;
             }
-            
-            select {
-                width: 25rem;
-                max-height: 1.875rem;
-                font-size: 0.8125rem;
+
+            .q-field--filled {
+                .q-field__inner {
+                    min-width: 27rem;
+                    max-height: 1.875rem;
+                    font-size: 0.8125rem;
+                }
             }
+
+            .q-field--auto-height.q-field--dense .q-field__control, .q-field--auto-height.q-field--dense .q-field__native {
+                min-height: 33px;
+            }
+
+            .q-field--dense .q-field__control, .q-field--dense .q-field__marginal {
+                height: 32px;
+            }
+            
         }
 
         .other-actions {

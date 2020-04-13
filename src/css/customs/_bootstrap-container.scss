@@ -30,6 +30,12 @@
     }
 }
 
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1340px;
+    }
+}
+
 .c-container {
     width: 100%;
     padding-right: 15px;
