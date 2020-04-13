@@ -1,5 +1,5 @@
 <template>
-    <q-page class="container">
+    <q-page class="home-page container">
         <!-- HERO SECTION -->
         <section class="hero-section">
             <div class="categories">

@@ -45,3 +45,7 @@
     opacity: 1;
     background: transparent;
 }
+
+.q-field--filled.q-field--focused .q-field__control:before {
+    background-color: transparent;
+}

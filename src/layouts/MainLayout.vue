@@ -99,9 +99,9 @@
 						<!-- VISITOR -->
 
 						<div class="header-toolbar__right-actions">
-							<a href="/register">Sign up</a>
+							<a href="javascript:" @click="$router.push('/signup')">Sign up</a>
 							<span class="q-mx-sm separator">|</span> 
-							<a href="/login">
+							<a href="javascript:" @click="$router.push('/login')">
 								<span>Login</span>
 								<span class="mdi mdi-account-circle"></span>
 							</a>
@@ -164,14 +164,14 @@
 						</div>
 						<div class="other-actions">
 							<a href="javascript:" @click="$router.push('/be-a-vendor')">Be a Vendor</a>
-							<a href="/login">Sell used Items</a>
+							<a href="javascript:" @click="$router.push('/login')">Sell used Items</a>
 						</div>
 					</div>
 				</div>
 			</q-toolbar>
 		</q-header>
 
-		<q-page-container style="padding-bottom: 3.125rem;" class="bg-light">
+		<q-page-container class="bg-light">
 			<router-view />
 		</q-page-container>
 
