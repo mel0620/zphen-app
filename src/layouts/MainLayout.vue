@@ -163,7 +163,7 @@
 							</select> -->
 						</div>
 						<div class="other-actions">
-							<a href="/be-a-vendor">Be a Vendor</a>
+							<a href="javascript:" @click="$router.push('/be-a-vendor')">Be a Vendor</a>
 							<a href="/login">Sell used Items</a>
 						</div>
 					</div>
