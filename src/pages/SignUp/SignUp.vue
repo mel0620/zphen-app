@@ -55,7 +55,7 @@
 
 										<q-item>
 											<q-item-section class="icon-holder bg-brand text-center" avatar>
-												<q-icon size="1em" color="white" name="img:./statics/arrow-right-double.svg"></q-icon>
+												<img src="statics/arrow-right-double.svg" alt="">
 											</q-item-section>
 											<q-item-section class="slide-label">Slide to get SMS Code</q-item-section>
 										</q-item>
