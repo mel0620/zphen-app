@@ -30,7 +30,7 @@ module.exports = function (/* ctx */) {
       // 'ionicons-v4',
       'mdi-v4',
       // 'fontawesome-v5',
-      // 'eva-icons',
+      'eva-icons',
       // 'themify',
       // 'line-awesome',
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
@@ -72,7 +72,15 @@ module.exports = function (/* ctx */) {
         'QRating',
         'QInput',
         'QSelect',
-        'QImg'
+        'QImg',
+        'QTabs',
+        'QTab',
+        'QRouteTab',
+        'QTabPanels',
+        'QTabPanel',
+        'QSeparator',
+        'QSlideItem',
+        'QAvatar'
       ],
 
       directives: [
@@ -80,7 +88,9 @@ module.exports = function (/* ctx */) {
       ],
 
       // Quasar plugins
-      plugins: []
+      plugins: [
+        'Notify'
+      ]
     },
 
     // https://quasar.dev/quasar-cli/cli-documentation/supporting-ie

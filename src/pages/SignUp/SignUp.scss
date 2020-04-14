@@ -1,0 +1,123 @@
+.sign-up-page {
+    padding-bottom: 3.25rem;
+    
+    .signup-wrapper {
+        .tab-wrapper {
+            max-width: 750px;
+            margin: auto;
+    
+            .q-tabs__content {
+                border: 1px solid $brand;
+                background-color: $brand-light;
+                color: $brand;
+                overflow: inherit;
+            }
+    
+            .q-tab__indicator {
+                height: 100%;
+    
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -19px;
+                    left: 50%;
+                    border-top: solid 18px $brand;
+                    border-left: solid 18px transparent;
+                    border-right: solid 18px transparent;
+                    z-index: 5;
+                    transform-origin: left;
+                    opacity: 0;
+                }
+            }
+    
+            .q-tab--active {
+                .q-tab__content {
+                    color: #fff;
+                    z-index: 5;
+                }
+
+                .q-tab__indicator {
+                    &::after {
+                        transform: translateX(-50%);
+                        opacity: 1;
+                    }
+                }
+            }
+    
+            .q-tab-panel {
+                padding-top: 2rem;
+            }
+    
+            .form-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 32px;
+    
+                .form-wrapper {
+    
+                    .q-checkbox__label {
+                        margin-left: 8px;
+                    }
+
+                    .email-label-confirm {
+                        margin-top: 1.5rem;
+                        min-height: 40px;
+                    }
+    
+                    .q-slide-item {
+                        border: 1px solid $brand;
+                        margin-top: 1.5rem;
+    
+                        .q-item {
+                            padding: 0;
+                            min-height: 38px;
+                            
+                            .q-item__section--avatar {
+                                min-width: 40px;
+                            }
+    
+                            .q-item__section--side {
+                                padding-right: 0;
+                            }
+    
+                            .icon-holder {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 40px;
+                            }
+    
+                            .slide-label {
+                                background-color: $brand-light;
+                                text-align: center;
+                                color: #707070;
+                            }
+                        }
+                    }
+    
+                    .form-group-custom {
+                        display: grid;
+                        grid-template-columns: 74% 24%;
+                        grid-gap: 2%;
+                        
+                        .q-field--filled .q-field__control {
+                            padding-right: 0 !important;
+                        }
+    
+                        .date-group {
+                            display: grid;
+                            grid-template-columns: 1.5fr 1fr 1.2fr;
+                            border-left: 1px solid $brand;
+                            
+                            .q-field--filled {
+                                .q-field__control:before {
+                                    border-left: 0 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

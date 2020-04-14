@@ -61,28 +61,6 @@
             margin: auto;
         }
 
-        .form-wrapper {
-            label {
-                margin-bottom: 0 !important;
-                font-weight: normal;
-            }
-
-            .form-group-custom {
-                display: grid;
-                grid-template-columns: auto auto;
-                grid-gap: 10px;
-
-                .date-group {
-                    display: grid;
-                    grid-template-columns: auto auto auto;
-
-                    .z-input:nth-child(2), .z-input:last-child {
-                        border-left: 0px;
-                    }
-                }
-            }
-        }
-
         .login-with {
             margin-top: 16px;
         }
