@@ -1,7 +1,72 @@
 .sign-up-page {
     padding-bottom: 3.25rem;
+
+    .ads-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5.625rem;
+        grid-gap: 0.625rem;
+        margin-top: 0.625rem;
+
+        @media screen and (max-width: 512px) {
+            grid-template-columns: 1fr;
+        }
+    }
     
     .signup-wrapper {
+        margin-top: 10px;
+
+        .q-btn--outline {
+            background-color: $brand-light !important;
+        }
+
+        .spacer {
+            min-height: 21px;
+        }
+
+        .content-header {
+            background-color: $brand-light;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 32px;
+
+            &__label {
+                font-size: 18px;
+                color: $black;
+            }
+
+            &__signup {
+                color: $black;
+            }
+        }
+
+        .content-body {
+            background-color: #fff;
+            padding: 25px 16px 50px;
+
+            .text-black {
+                color: $black;
+            }
+
+            .separator-text {
+                color: $brand;
+                font-weight: 500;
+            }
+
+            form,
+            .login-with {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 32px;
+                max-width: 750px;
+                margin: auto;
+            }
+
+            .login-with {
+                margin-top: 16px;
+            }
+        }
         .tab-wrapper {
             max-width: 750px;
             margin: auto;

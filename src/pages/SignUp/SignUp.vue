@@ -145,7 +145,7 @@
 
 <script>
 // EXTERNAL CSS
-import "../Login/Login.scss"
+// import "../Login/Login.scss"
 import "./Signup.scss"
 
 // COMPONENTS LOAD ON DEMAND
