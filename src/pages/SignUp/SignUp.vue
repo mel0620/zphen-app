@@ -145,8 +145,7 @@
 
 <script>
 // EXTERNAL CSS
-// import "../Login/Login.scss"
-import "./Signup.scss"
+import "./SignUp.scss"
 
 // COMPONENTS LOAD ON DEMAND
 const Ads = () => import(/*webpackChunkname: "advertisement" */ "components/AdsVariantOne/AdsVariantOne")
