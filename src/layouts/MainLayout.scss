@@ -558,7 +558,7 @@
 
         .choose-location-wrapper {
             justify-self: center;
-            margin-right: 7.25rem;
+            margin-right: 6.5625rem;
 
             .label {
                 white-space: nowrap;
@@ -600,6 +600,7 @@
                 text-decoration: none;
                 color: $black;
                 transition: .2s color ease-in-out;
+                font-size: 0.9375rem;
 
                 &:last-child {
                     margin-left: 3rem;
