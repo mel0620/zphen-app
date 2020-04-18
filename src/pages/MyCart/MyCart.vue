@@ -63,7 +63,7 @@
                      <div class="list-item">
                         <div class="list-item__top">
                             <div class="list-item__icon">
-                                <q-icon size="1.2em" name="mdi-map-marker"></q-icon>
+                                <q-icon size="1.5em" name="mdi-map-marker"></q-icon>
                             </div>
                             <div class="list-item__delivery">
                                 <div>Deliver & Shipped to</div>
@@ -81,18 +81,18 @@
                             <div class="total-holder">
                                 <div class="total-item">
                                     <div class="total-item__label">Subtotal (6 items)</div>
-                                    <div class="total-item__value">₱ <b>4,710</b>.00</div>
+                                    <div class="total-item__value"><b>₱ 4,710</b>.00</div>
                                 </div>
                                 <div class="total-item">
                                     <div class="total-item__label">Transaction Fee 1%</div>
-                                    <div class="total-item__value">₱ <b>47</b>.1</div>
+                                    <div class="total-item__value"><b>₱ 47</b>.1</div>
                                 </div>
                             </div>
-                            <div class="grand-total-holder">
-                                <div class="total-item">
-                                    <div class="total-item__label">Total:</div>
-                                    <div class="total-item__value">₱ <b>4,757</b>.1 <br/><div class="caption">VAT included, where applicable</div></div>
-                                </div>
+                        </div>
+                        <div class="list-item__bottom">
+                            <div class="total-item">
+                                <div class="total-item__label">Total:</div>
+                                <div class="total-item__value"><b>₱ 4,757</b>.1 <br/><div class="caption">VAT included, where applicable</div></div>
                             </div>
                         </div>
                     </div>

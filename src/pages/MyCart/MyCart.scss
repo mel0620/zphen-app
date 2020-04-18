@@ -173,7 +173,7 @@
             align-self: flex-start;
 
             .list-item-wrapper {
-                padding: 1rem 1rem 0;
+                padding: 1rem 1.25rem 0;
 
                 .list-item {
                     &__top {
@@ -213,7 +213,9 @@
                     }
 
                     &__center {
+                        border-bottom: 1px solid #d1d1d1;
                         padding: 0.625rem;
+                        padding-top: 1rem;
 
                         .label {
                             text-align: center;
@@ -222,7 +224,6 @@
                         }
 
                         .total-holder {
-                            border-bottom: 1px solid #d1d1d1;
                             padding-bottom: 1rem;
                             .total-item {
                                 display: flex;
@@ -239,26 +240,32 @@
                                 }
                             }
                         }
+                    }
 
-                        .grand-total-holder {
-                            @extend .total-holder;
-                            border-bottom: 0;
-                            padding-bottom: 0;
+                    &__bottom {
+                        padding: 1rem;
 
-                            .total-item {
-                                &__label, &__value {
-                                    font-size: 1.25rem;
-                                }
+                        .total-item {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 8px;
 
-                                &__value {
-                                    color: $brand-strong;
-                                    text-align: right;
+                            &__label, &__value {
+                                font-size: 1.25rem;
+                            }
 
-                                    .caption {
-                                        font-size: 0.75rem;
-                                        font-weight: 300;
-                                        color: $black;
-                                    }
+                            &__label {
+                                font-weight: 300;
+                            }
+
+                            &__value {
+                                color: $brand-strong;
+                                text-align: right;
+
+                                .caption {
+                                    font-size: 0.75rem;
+                                    font-weight: 300;
+                                    color: $black;
                                 }
                             }
                         }
