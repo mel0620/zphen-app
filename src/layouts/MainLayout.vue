@@ -4,29 +4,27 @@
 			<q-toolbar class="bg-white main-header q-pa-none">
 				<div class="c-container">
 					<div class="header-toolbar">
+
 						<div class="header-toolbar__brand">
 							<a href="/" class="d-flex">
-								<img width="150px" src="statics/brand.svg" alt="">
+								<img width="249px" height="54" src="statics/brand.png" alt="">
 							</a>
 						</div>
-						<div class="header-toolbar__center-actions">
+
+						<div class="header-toolbar__search">
 							<div class="search">
 								<input type="text" placeholder="Search in zphen..." class="search__input">
 								<button class="search__btn">
-									<span class="mdi mdi-magnify"></span>
+									<q-icon size="1.5em" color="white" name="mdi-magnify"></q-icon>
 								</button>
 							</div>
+						</div>
+
+						<div class="header-toolbar__actions">
 							<div class="actions">
 								<div class="cart">
 									<a href="javascript:" class="cart__dropdown">
 										My Cart <span class="mdi mdi-menu-down"></span>
-									</a>
-									<a href="javascript:" class="cart__add">
-										<span class="mdi mdi-cart"></span>
-										<div class="round-icon">
-											<!-- <span class="value">20</span> -->
-											<span class="mdi mdi-plus"></span>
-										</div>
 									</a>
 									<div class="cart__dropdown-menu">
 										<div class="cart__dropdown-header">
@@ -76,53 +74,60 @@
 												</div>
 											</div>
 										</div>
+										
 										<div class="cart__dropdown-footer">
 											<div class="cart__total">TOTAL: ₱ 54,000.00</div>
 
 											<!-- NO ITEMS ON CART -->
-											<!-- <button class="cart__action">ADD ITEMS TO PROCEED</button> -->
+											<q-btn unelevated color="brand" class="full-width"  label="Add items to proceed"></q-btn>
 
-											<q-btn unelevated color="brand" class="full-width"  label="Proceed to checkout"></q-btn>
+											<!-- <q-btn unelevated color="brand" class="full-width"  label="Proceed to checkout"></q-btn> -->
 											<!-- <button class="cart__action">PROCEED TO CHECKOUT</button> -->
 										</div>
 									</div>
 								</div>
+								<a href="javascript:" class="cart__add">
+									<q-icon size="1.2em" color="black" name="mdi-cart"></q-icon>
+									<div class="round-icon">
+										<!-- <span class="value">20</span> -->
+										<span class="mdi mdi-plus"></span>
+									</div>
+								</a>
 								<a class="notif" href="javascript:">
-									<span class="mdi mdi-bell"></span>
+									<q-icon size="1.2em" color="black" name="mdi-bell"></q-icon>
 									<div class="round-icon">
 										<span class="mdi mdi-plus"></span>
 									</div>
 								</a>
 							</div>
-						</div>
-						
-						<!-- VISITOR -->
 
-						<div class="header-toolbar__right-actions">
-							<a href="javascript:" @click="$router.push('/signup')">Sign up</a>
-							<span class="q-mx-sm separator">|</span> 
-							<a href="javascript:" @click="$router.push('/login')">
-								<span>Login</span>
-								<span class="mdi mdi-account-circle"></span>
-							</a>
-						</div>
-
-						<!-- LOGGED IN -->
-
-						<!-- <div class="header-toolbar__is-logged-in">
-							<div class="user">
-								<a class="user__dropdown" href="javascript:">John Doe <span class="mdi mdi-account-circle"></span></a>
-								<div class="user__menu">
-									<ul>
-										<li><a href="javascript:">My Profile</a></li>
-										<li><a href="javascript:">My Orders</a></li>
-										<li><a href="javascript:">My Reviews</a></li>
-										<li><a href="javascript:">Sell Items</a></li>
-										<li><a href="javascript:">Logout</a></li>
-									</ul>
-								</div>
+							<!-- VISITOR -->
+							<div class="right-actions">
+								<a href="javascript:" @click="$router.push('/signup')">Sign up</a>
+								<q-separator style="background: #1e1e1e; height: 20px" class="q-mx-sm" vertical></q-separator>
+								<a href="javascript:" @click="$router.push('/login')">
+									<span>Login</span>
+									<q-icon size="1.5em" name="mdi-account-circle"></q-icon>
+								</a>
 							</div>
-						</div> -->
+
+							<!-- LOGGED IN -->
+
+							<!-- <div class="right-actions__is-logged-in">
+								<div class="user">
+									<a class="user__dropdown" href="javascript:">John Doe <q-icon size="1.5em" name="mdi-account-circle"></q-icon></a>
+									<div class="user__menu">
+										<ul>
+											<li><a href="javascript:">My Profile</a></li>
+											<li><a href="javascript:">My Orders</a></li>
+											<li><a href="javascript:">My Reviews</a></li>
+											<li><a href="javascript:">Sell Items</a></li>
+											<li><a href="javascript:">Logout</a></li>
+										</ul>
+									</div>
+								</div>
+							</div> -->
+						</div>
 					</div>
 				</div>
 				<div v-if="$route.path !== '/'" class="container">
@@ -197,19 +202,19 @@
                     <div class="footer-nav">
                         <div class="footer-nav__title">Follow Us</div>
                         <div class="social">
-                            <a href="javascript:">
+                            <a class="q-pr-md" href="javascript:">
                                 <img src="statics/facebook.svg" alt="">
                             </a>
-                            <a href="javascript:">
+                            <a class="q-pr-md" href="javascript:">
                                 <img src="statics/instagram.svg" alt="">
                             </a>
-                            <a href="javascript:">
+                            <a class="q-pr-md" href="javascript:">
                                 <img src="statics/twitter.svg" alt="">
                             </a>
-                            <a href="javascript:">
+                            <a class="q-pr-md" href="javascript:">
                                 <img src="statics/linkedin.svg" alt="">
                             </a>
-                            <a href="javascript:">
+                            <a class="q-pr-md" href="javascript:">
                                 <img src="statics/youtube.svg" alt="">
                             </a>
                         </div>
@@ -231,8 +236,8 @@
                         <div class="footer-nav__title">Payment Methods</div>
                         <img class="img-fluid"  src="statics/payment-methods.png" alt="">
                     </div>
-                    <div class="footer-nav footer-nav--center">
-                        <div class="footer-nav__title">Payment Methods</div>
+                    <div class="footer-nav footer-nav--end">
+                        <div class="footer-nav__title">Available Countries</div>
                         <div class="social">
                             <a href="javascript:">
                                 <img class="img-fluid" src="statics/phil.png" alt="">
@@ -286,18 +291,18 @@ export default {
 		customer_care_options: [
 			{ link_title: 'Help Center', link: ''},
 			{ link_title: 'How to Buy', link: ''},
-			{ link_title: 'Shipping and Delivery', link: ''},
+			{ link_title: 'Shipping & Delivery', link: ''},
 			{ link_title: 'International Product Policy', link: ''},
 			{ link_title: 'How to Return', link: ''},
-			{ link_title: 'Question', link: ''},
+			{ link_title: 'Question?', link: ''},
 			{ link_title: 'Contact Us', link: ''},
 		],
 		zphen_options: [
 			{link_title: 'About Zphen', link: ''},
 			{link_title: 'Careers', link: ''},
-			{link_title: 'Terms and Conditions', link: ''},
+			{link_title: 'Terms & Conditions', link: ''},
 			{link_title: 'Privacy Policy', link: ''},
-			{link_title: 'Cookies Notice', link: ''},
+			{link_title: 'Cookie Notice', link: ''},
 			{link_title: 'Press & Media', link: ''},
 			{link_title: 'Intellectual Property Protection', link: ''},
 		],

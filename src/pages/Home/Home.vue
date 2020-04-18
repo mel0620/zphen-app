@@ -105,10 +105,11 @@
                     v-for="(prod, index) in products" 
                     :key="index" 
                     :prod="prod"
+                    link="/product-view"
                 />
             </div>
             <div class="d-flex justify-center q-py-md q-mt-lg">
-                <q-btn style="min-width: 250px" unelevated color="brand" label="Load more"></q-btn>
+                <q-btn class="btn-load-more" style="min-width: 250px" unelevated color="brand" label="Load more"></q-btn>
             </div>
         </section>
         <!-- END FEATURE PRODUCTS SECTION -->

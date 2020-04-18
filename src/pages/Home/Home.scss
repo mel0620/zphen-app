@@ -3,9 +3,9 @@
 	
 	.hero-section {
 		display: grid;
-		grid-template-columns: 1fr 3fr 1fr;
-		grid-template-rows: 22.8125rem;
-		grid-gap: 0.625rem;
+		grid-template-columns: 12.5rem 1fr 12.5rem;
+		grid-template-rows: 365px;
+		grid-gap: 10px;
 		margin-bottom: 0.625rem;
 		margin-top: 1rem;
 		
@@ -23,6 +23,7 @@
 				color: #fff;
 				padding: 0.25rem 0.625rem;
 				text-transform: uppercase;
+				font-size: 0.9375rem;
 			}
 			
 			&__items {
@@ -46,6 +47,7 @@
 						display: flex;
 						align-items: center;
 						justify-content: space-between;
+						font-size: 0.9375rem;
 						
 						.mdi {
 							opacity: 0;
@@ -68,13 +70,13 @@
 			
 			.sub-category {
 				position: absolute;
-				top: 28px;
+				top: 29px;
 				right: -200px;
 				list-style-type: none;
 				padding: 0;
 				margin: 0;
 				z-index: 50;
-				max-height: 337px;
+				max-height: 21rem;
 				min-width: 12.5rem;
 				background-color: #fff;
 				visibility: hidden;
@@ -92,6 +94,7 @@
 					a {
 						color: $text-dark;
 						text-decoration: none;
+						font-size: 0.9375rem;
 					}
 				}
 			}
@@ -119,10 +122,15 @@
 			}
 			
 			.swiper-pagination-bullet {
+				width: 10px;
+				height: 10px;
 				background: #000;
 				opacity: 0.2;
 				background-color: transparent;
 				border: 1px solid #000;
+			}
+			.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+				margin: 0 2px;
 			}
 			
 			.swiper-pagination-bullet-active {
@@ -179,7 +187,7 @@
 	.ads-section {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 5.625rem;
+		grid-template-rows: 90px;
 		grid-gap: 0.625rem;
 		
 		@media screen and (max-width: 512px) {
@@ -205,7 +213,12 @@
 		
 		.q-btn {
 			width: 12.5rem;
-			margin: 0 auto;
+			margin: 0 auto 1rem;
+			
+			.q-btn__wrapper {
+				min-height: 1.875rem !important;
+				padding: 0 !important;
+			}
 		}
 	}
 	
@@ -221,13 +234,13 @@
 		.section-action {
 			text-decoration: none;
 			color: $brand;
-			font-size: 1rem;
+			font-size: 1.25rem;
 		}
 	}
 	
 	.feature-products,
 	.most-popular {
-		margin-top: 2rem;
+		margin-top: 3.125rem;
 		overflow: hidden;
 		
 		.rating-holder {
@@ -242,6 +255,13 @@
 			// grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 			grid-gap: 2%;
 			margin-top: 1rem;
+		}
+
+		.btn-load-more {
+			font-weight: 400;
+			.q-btn__wrapper {
+				min-height: 2.5rem;
+			}
 		}
 	}
 	
@@ -262,7 +282,7 @@
 			.label {
 				text-align: center;
 				color: $text-dark;
-				font-size: 1.125rem;
+				font-size: 1.25rem;
 				padding: 1rem;
 			}
 		}

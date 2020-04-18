@@ -1,9 +1,12 @@
 <template>
     <div class="product-item">
         <div class="product-item__top">
-            <a href="/product-view" class="product-item__image">
-                <img :src="prod.prod_img_url" alt="">
-            </a>
+            <q-img :src="prod.prod_img_url" 
+                @click="$router.push(link)" 
+                style="max-height: 250px;" 
+                spinner-color="brand" 
+                ratio="1"
+            />
         </div>
         <div class="product-item__bottom">
             <div class="product-item__info">
@@ -20,7 +23,7 @@
                     <q-rating
                         v-model="prod.prod_rating"
                         max="5"
-                        size="1.2em"
+                        size="1.3em"
                         color="brand"
                         icon="star_border"
                         icon-selected="star"
@@ -41,7 +44,8 @@
 export default {
     name: 'ProductItem',
     props: {
-        prod: Object
+        prod: Object,
+        link: String
     }
 }
 </script>
@@ -50,24 +54,39 @@ export default {
 @import "../../css/toem.scss";
 
 .product-item {
-
     background-color: #fff;
 
     &__top {
         border-bottom: 2px solid $body-color;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+
+        .q-img {
+            cursor: pointer;
+        }
 
         .product-item__image {
-            // min-width: 250px;
-            // min-height: 250px;
-            // padding: 5px;
             text-decoration: none;
 
             img {
-                max-width: 100%;
-                min-height: 205px;
-                max-height: 205px;
+                max-width: 250px;
+                max-height: 250px;
                 object-fit: contain;
                 transform: scale(.9);
+            }
+        }
+
+        @media screen and (max-width: 1367px) {
+            width: 100%;
+            height: inherit;
+
+            .product-item__image {
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
             }
         }
     }
@@ -81,11 +100,12 @@ export default {
 
             .product-item__name,
             .product-item__desc {
+                font-size: 0.9375rem;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 color: $black;
-                max-width: 11.875rem;
+                // max-width: 11.875rem;
             }
         }
 
@@ -98,22 +118,31 @@ export default {
                 // line-height: 16px;
                 .product-item__current {
                     color: $brand-strong;
-                    font-size: toem(18px);
+                    font-size: toem(25px);
                 }
                 .product-item__prev {
                     color: $black;
                     opacity: 0.4;
-                    font-size: toem(12px);
+                    font-size: toem(16px);
                     text-decoration: line-through;
                 }
             }
 
             .product-item__action {
                 justify-self: flex-end;
+                display: grid;
+                grid-row-gap: 8px;
 
                 .q-btn {
                     background-color: $brand-light !important;
                     white-space: nowrap;
+                    font-size: 0.9375rem;
+                    min-width: 6.25rem;
+
+                    .q-btn__wrapper {
+                        min-height: 1.875rem;
+                        padding: 0 !important;
+                    }
                 }
             }
 
@@ -131,6 +160,23 @@ export default {
 
                     .z-star {
                         justify-content: flex-start;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 1367px) {
+            .product-item__info {
+                // font-size: 14px;
+            }
+
+            .product-item__order {
+                .product-item__price {
+                    .product-item__current {
+                        font-size: 18px;
+                    }
+                    .product-item__prev {
+                        font-size: 12px;
                     }
                 }
             }
