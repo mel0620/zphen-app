@@ -4,8 +4,9 @@
     .my-cart-wrapper {
         margin-top: 0.625rem;
         display: grid;
-        grid-template-columns: 74% 25%;
-        grid-gap: 1%;
+        // grid-template-columns: 74% 25%;
+        grid-template-columns: 1fr 390px;
+        grid-gap: 10px;
 
         .my-cart {
             
@@ -14,12 +15,14 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 0.5rem 2rem;
+                padding: 0 2rem;
+                min-height: 3.75rem;
 
                 &-text {
-                    font-size: 18px;
+                    font-size: 1.5625rem;
                     color: $black;
                 }
+
                 &-actions {
                     .q-btn {
                         font-weight: 400;
@@ -41,6 +44,10 @@
                         border-bottom: 1px solid #d1d1d1;
                         padding: 1.5rem 0;
 
+                        .q-checkbox__label {
+                            font-size: 1.25rem;
+                        }
+
                         .cart-item__labels {
                             display: flex;
                             align-items: center;
@@ -49,6 +56,7 @@
                             .cart-item__label {
                                 min-width: 6.25rem;
                                 color: $brand;
+                                font-size: 0.9375rem;
                                 // border: 1px solid;
                             }
                         }
@@ -67,9 +75,9 @@
                             .q-img {
                                 border: 1px solid #d1d1d1;
 
-                                &__image {
-                                    transform: scale(.9);
-                                }
+                                // &__image {
+                                //     transform: scale(.9);
+                                // }
                             }
 
                             .cart-item__product-info {
@@ -176,12 +184,12 @@
                         .list-item__delivery {
 
                             div {
-                                font-size: 0.875rem;
+                                font-size: 0.9375rem;
                                 font-weight: 400;
                             }
 
                             p {
-                                font-size: 0.875rem;
+                                font-size: 0.9375rem;
                                 font-weight: 300;
                                 line-height: 1rem;
                                 margin-top: 0.5rem;
@@ -189,8 +197,16 @@
                         }
 
                         .list-item__action {
-                            .q-btn {
+                            .btn-edit {
+                                border: 0;
+                                background-color: transparent;
                                 font-weight: 400;
+                                color: $info;
+                                text-transform: uppercase;
+                                font-size: 15px;
+                                position: relative;
+                                outline: none;
+                                cursor: pointer;
                             }
                         }
                     }
@@ -214,6 +230,11 @@
 
                                 &__label {
                                     font-weight: 300;
+                                    font-size: 0.9375rem;
+                                }
+
+                                &__value {
+                                    font-size: 0.9375rem;
                                 }
                             }
                         }
@@ -225,7 +246,7 @@
 
                             .total-item {
                                 &__label, &__value {
-                                    font-size: 1.125rem;
+                                    font-size: 1.25rem;
                                 }
 
                                 &__value {
@@ -233,13 +254,23 @@
                                     text-align: right;
 
                                     .caption {
-                                        font-size: 10px;
+                                        font-size: 0.75rem;
                                         font-weight: 300;
                                         color: $black;
                                     }
                                 }
                             }
                         }
+                    }
+                }
+            }
+
+            .actions {
+                .q-btn {
+                    font-size: 20px;
+                    .q-btn__wrapper {
+                        padding: 0;
+                        min-height: 50px;
                     }
                 }
             }
@@ -261,7 +292,8 @@
             .section-action {
                 text-decoration: none;
                 color: $brand;
-                font-size: 1rem;
+                font-size: 1.25rem;
+                font-weight: 400;
             }
         }
 
@@ -272,5 +304,15 @@
 			grid-row-gap: 3%;
 			margin-top: 1rem;
         }
+
+        .btn-load-more {
+            font-size: 0.9375rem;
+            font-weight: 400;
+            min-width: 15.625rem;
+
+			.q-btn__wrapper {
+				min-height: 2.5rem;
+			}
+		}
     }
 }

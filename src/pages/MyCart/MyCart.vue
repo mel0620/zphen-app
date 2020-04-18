@@ -28,8 +28,9 @@
                                 <q-checkbox v-model="vendor_name" keep-color dense color="brand"/>
                                 <q-img
                                     src="https://static.bhphoto.com/images/images500x500/1484050840_1308819.jpg"
-                                    spinner-color="white" ratio="1"
+                                    spinner-color="brand" ratio="1"
                                     style="width: 100px"
+                                    spinner-size="25px"
                                 />
                                 <div class="cart-item__product-info">
                                     <div class="cart-item__prod-name">Product Name</div>
@@ -69,7 +70,10 @@
                                 <p>Metro Manila, Parañaque City, Brgy. San Isidro</p>
                             </div>
                             <div class="list-item__action">
-                                <q-btn flat dense size="sm" color="info" icon="mdi-pencil" label="edit"></q-btn>
+                                <button v-ripple class="btn-edit">
+                                    <q-icon size="1.5em" name="mdi-pencil"></q-icon>
+                                    Edit
+                                </button>
                             </div>
                         </div>
                         <div class="list-item__center">
@@ -87,7 +91,7 @@
                             <div class="grand-total-holder">
                                 <div class="total-item">
                                     <div class="total-item__label">Total:</div>
-                                    <div class="total-item__value">₱ <b>4,757</b>.1 <br/><div class="caption">VAT included. where applicable</div></div>
+                                    <div class="total-item__value">₱ <b>4,757</b>.1 <br/><div class="caption">VAT included, where applicable</div></div>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +116,7 @@
                 />
             </div>
             <div class="d-flex justify-center q-py-md q-mt-xl">
-                <q-btn style="min-width: 250px" unelevated color="brand" label="Load more"></q-btn>
+                <q-btn class="btn-load-more" unelevated color="brand" label="Load more"></q-btn>
             </div>
         </section>
 

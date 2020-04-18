@@ -47,7 +47,13 @@
 													</div>
 													<div class="product-item__preview">
 														<div class="image-holder">
-															<img :src="cart.prod_img_url" alt="">
+															<q-img :src="cart.prod_img_url"
+																style="width: 60px"
+																ratio="1"
+																spinner-color="brand"
+																spinner-size="20px"
+															/>
+															<!-- <img :src="cart.prod_img_url" alt=""> -->
 														</div>
 														<div class="prod-info">
 															<div class="prod-info__top">
