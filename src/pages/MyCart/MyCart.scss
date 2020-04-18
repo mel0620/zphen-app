@@ -15,7 +15,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 0 2rem;
+                padding: 0 3.5rem;
                 min-height: 3.75rem;
 
                 &-text {
@@ -32,7 +32,7 @@
 
             &__body {
                 background-color: #fff;
-                padding: 1.5rem 2rem;
+                padding: 1.5rem 3.5rem;
                 padding-top: 0;
 
                 .cart-item {
@@ -65,7 +65,7 @@
                         margin-left: 2rem;
 
                         .cart-item__list {
-                            padding: 1rem;
+                            padding: 1.5rem 1rem;
                             border-bottom: 1px solid #d1d1d1;
                             display: grid;
                             grid-template-columns: auto auto 1fr auto auto;
@@ -73,7 +73,8 @@
                             grid-gap: 1rem;
 
                             .q-img {
-                                border: 1px solid #d1d1d1;
+                                border: 1px solid #f6f6f6;
+                                background-color: #f6f6f6;
 
                                 // &__image {
                                 //     transform: scale(.9);
