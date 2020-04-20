@@ -1,5 +1,5 @@
 .vendor-page {
-    padding-bottom: 3.25rem;
+    padding-bottom: 3.125rem;
         
     .c-card {
         border-radius: 1.25rem;
@@ -9,7 +9,11 @@
     .banner {
         padding: 2rem;
         text-align: center;
-        margin-top: 2rem;
+        margin-top: 3.125rem;
+        min-height: 27.625rem;
+        max-width: 81.25rem;
+        margin-left: auto;
+        margin-right: auto;
 
         &__header {
             font-size: 3.125rem;
@@ -24,39 +28,58 @@
 
     .register-and-login {
         text-align: center;
-        margin-top: 2rem;
+        margin-top: 3.125rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2rem;
+        grid-template-columns: auto auto;
+
+        @media screen and (max-width: 1367px){
+            grid-gap: 3.125rem;
+        }
 
         .c-card {
             padding: 1.5rem;
+            width: 100%;
+            max-height: 16rem;
+            max-width: 39.0625rem;
+            margin: auto;
+            box-sizing: border-box;
         }
 
         .header-text {
             font-size: 1.5625rem;
             color: $black;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
 
         .caption {
             font-weight: 300;
-            font-size: 1rem;
+            font-size: 0.9375rem;
             color: $black;
+            line-height: 1.5625rem;
         }
 
-        button {
-            margin-top: 1rem;
-            min-width: 24rem;
+        .q-btn {
+            font-size: 1.25rem;
+            margin-top: 1.8rem;
+
+            .q-btn__wrapper {
+                min-width: 25rem;
+                min-height: 3.125rem;
+            }
         }
     }
 
     .steps {
-        margin-top: 2rem; 
-
-        .c-card {
-            padding: 2rem;
-        }
+        margin-top: 3.125rem;
+        max-width: 81.25rem;
+        min-height: 26.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
 
         .header-text {
             font-size: 3.125rem;
@@ -73,75 +96,94 @@
             display: grid;
             grid-template-columns: repeat(5, auto);
             grid-gap: 4rem;
-            margin-top: 1rem;
+            margin-top: 2rem;
             justify-content: center;
             position: relative;
             z-index: 1;
-
-            &::after {
-                content: "";
-                height: 1px;
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 23%;
-                max-width: 600px;
-                background-color: $black;
-                margin: auto;
-                z-index: -1;
-            }
+            max-width: 49.125rem;
+            margin-left: auto;
+            margin-right: auto;
 
             &__step {
-                max-width: 5rem;
                 text-align: center;
 
                 .stepper__number {
                     color: $black;
                     border: 1px solid $black;
                     border-radius: 100%;
-                    width: 4.6875rem;
-                    height: 4.6875rem;
+                    width: 4.5625rem;
+                    height: 4.5625rem;
                     font-size: 3.125rem;
                     font-weight: bold;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     background-color: #fff;
+                    margin-left: auto;
+                    margin-right: auto;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 1px;
+                        background-color: $black;
+                        z-index: -1;
+                        width: 100px;
+                        left: 100%;
+                    }
                 }
 
                 .stepper__label {
-                    font-size: 1.25rem;
+                    font-size: 1.5625rem;
                     text-align: center;
                     color: $black;
                     line-height: 1.5625rem;
-                    margin-top: 1rem;
+                    margin-top: 2.5rem;
+                }
+
+                &:last-child {
+                    .stepper__number {
+                        &::after {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
     }
 
     .subsription {
-        margin-top: 2rem;
+        margin-top: 3.125rem;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2rem;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 3.125rem;
+        max-width: 81.25rem;
+        margin-left: auto;
+        margin-right: auto;
 
         .plan {
             background-color: #fff;
-            padding: 1rem 1rem 2.2rem;
+            padding: 20px 20px 2.2rem;
+            max-width: 25rem;
+            box-sizing: border-box;
+            display: grid;
+            justify-content: center;
+            min-height: 51.625rem;
 
             &__pricing {
                 border: 1px solid $brand;
                 background-color: $brand-light;
                 border-radius: 0.3125rem;
                 text-align: center;
-                min-height: 8.125rem;
+                min-height: 9.375rem;
+                min-width: 22.5rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
                 .plan__free {
-                    font-size: 2.5rem;
+                    font-size: 3.125rem;
                     color: $black;
                     font-weight: 300;
 
@@ -155,33 +197,36 @@
                     &-value {
                         font-weight: 300;
                         color: $black;
-                        font-size: 1.5rem;
+                        font-size: 1.875rem;
                         line-height: 2.2rem;
 
                         b {
-                            font-size: 2.5rem;
+                            font-size: 3.125rem;
                             font-weight: bold;
                         }
                     }
 
                     &-subs {
                         color: $black;
-                        font-size: 1.25rem;
+                        font-size: 1.5625rem;
                         font-weight: 300;
-                        line-height: 1.4rem;
+                        line-height: 1.875rem;
                     }
                 }
             }
 
             &__features {
                 margin-top: 1.5rem;
-                min-height: 17.8125rem;
+                min-height: 25rem;
+                min-width: 19.125rem;
+                margin-left: auto;
+                margin-right: auto;
 
                 .plan__feature-list {
                     color: $black;
                     margin-left: 1rem;
                     margin-bottom: 0.625rem;
-                    font-size: 1.25rem;
+                    font-size: 1.5625rem;
                 }
             }
 
@@ -191,12 +236,17 @@
 
                 .plan__caption {
                     color: $black;
-                    padding: 0 2.2rem;
                     font-weight: 300;
+                    font-size: 0.9375rem;
                 }
 
-                button {
-                    min-width: 17.5rem;
+                .q-btn {
+                    font-size: 1.25rem;
+
+                    .q-btn__wrapper {
+                        min-width: 18.75rem;
+                        min-height: 1.875rem;
+                    }
                 }
             }
         }

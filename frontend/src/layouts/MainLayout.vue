@@ -245,13 +245,13 @@
                     <div class="footer-nav footer-nav--end">
                         <div class="footer-nav__title">Available Countries</div>
                         <div class="social">
-                            <a href="javascript:">
+                            <a class="no-cursor" href="javascript:">
                                 <img class="img-fluid" src="statics/phil.png" alt="">
                             </a>
-                            <a href="javascript:">
+                            <a class="no-cursor" href="javascript:">
                                 <img class="img-fluid" src="statics/sing.png" alt="">
                             </a>
-                            <a href="javascript:">
+                            <a class="no-cursor" href="javascript:">
                                 <img class="img-fluid" src="statics/kor.png" alt="">
                             </a>
                         </div>

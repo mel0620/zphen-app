@@ -13,7 +13,6 @@
                 <div class="tab-wrapper">
                     <q-tabs
 						v-model="tab"
-						dense
 						class="text-grey"
 						active-color="primary"
 						indicator-color="primary"
@@ -63,7 +62,7 @@
 
 									<div v-if="tab == 'email'" class="email-label-confirm">Check your email and click the confirmation link.</div>
 									
-									<div class="form-group q-mt-md">
+									<div class="form-group q-mt-lg">
 										<div class="label">Password</div>
 										<q-input v-model="password_input" type="password"
 											placeholder="Minimum 6 character with a number and a letter"
@@ -73,9 +72,9 @@
 										</q-input>
 									</div>
 
-									<div class="form-group-custom q-mt-md">
+									<div class="form-group-custom q-mt-lg">
 										<div class="birthday">
-											<label class="text-black" for="birthday">Birthday</label>
+											<div class="label">Birthday</div>
 											<div class="date-group">
 												<q-select v-model="month_select_option" 
 													dense filled options-dense
@@ -95,7 +94,7 @@
 											</div>
 										</div>
 										<div class="gender">
-											<label class="text-black" for="birthday">Gender</label>
+											<div class="label">Gender</div>
 											<q-select v-model="gender_select_option" 
 												dense filled options-dense 
 												label="Gender"
@@ -123,16 +122,16 @@
 										</div>
 									</div>
 									<div>
-										<div class="text-center q-mb-md">By clicking "SIGN UP" I agree to ZPHEN <a class="text-link" href="javascript:">Privacy Policy</a></div>
-										<q-btn unelevated class="full-width q-py-xs" color="brand" label="SIGN UP"></q-btn>
+										<div class="privacy-policy text-center q-mb-lg">By clicking "SIGN UP" I agree to ZPHEN <a class="text-link" href="javascript:">Privacy Policy</a></div>
+										<q-btn unelevated class="btn-signup full-width" color="brand" label="SIGN UP"></q-btn>
 									</div>
 								</div>
 							</div>
 						</q-tab-panel>
                     </q-tab-panels>
                 </div>
-                <div class="d-flex justify-center q-mt-md">
-                    <div class="separator-text">OR SIGN UP WITH</div>
+                <div class="d-flex justify-center">
+                    <div class="separator-text q-my-lg">OR SIGN UP WITH</div>
                 </div>
                 <div class="login-with">
                     <q-btn unelevated no-caps color="fb" icon="img:./statics/facebook-white.svg" label="Facebook"></q-btn>

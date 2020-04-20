@@ -29,15 +29,17 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 8px 32px;
+            padding: 0 3.125rem;
+            min-height: 3.75rem;
 
             &__label {
-                font-size: 18px;
+                font-size: 1.5625rem;
                 color: $black;
             }
 
             &__signup {
                 color: $black;
+                font-size: 0.9375rem;
             }
         }
 
@@ -52,30 +54,47 @@
             .separator-text {
                 color: $brand;
                 font-weight: 500;
+                font-size: 1.25rem;
             }
 
             form,
             .login-with {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                grid-gap: 32px;
-                max-width: 750px;
+                grid-gap: 3.125rem;
+                max-width: 53.125rem;
                 margin: auto;
-            }
 
-            .login-with {
-                margin-top: 16px;
+                .q-btn {
+                    font-size: 20px;
+                    min-width: 25rem;
+
+                    .q-btn__wrapper {
+                        padding: 0;
+                        min-height: 3.125rem;
+                    }
+                }
             }
         }
+
         .tab-wrapper {
-            max-width: 750px;
+            max-width: 53.125rem;
             margin: auto;
+
+            .q-tab {
+                min-height: 3.125rem;
+                min-width: 26.5625rem;
+            }
     
             .q-tabs__content {
                 border: 1px solid $brand;
                 background-color: $brand-light;
                 color: $brand;
                 overflow: inherit;
+
+                .q-tab__label {
+                    font-size: 1.25rem;
+                }
             }
     
             .q-tab__indicator {
@@ -116,22 +135,32 @@
             .form-container {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                grid-gap: 32px;
+                grid-gap: 3.125rem;
     
+                .label {
+                    font-size: 0.9375rem;
+                }
+
                 .form-wrapper {
     
+                    .privacy-policy {
+                        font-size: 0.9375rem;
+                    }
+
                     .q-checkbox__label {
                         margin-left: 8px;
+                        font-size: 0.9375rem;
                     }
 
                     .email-label-confirm {
                         margin-top: 1.5rem;
-                        min-height: 40px;
+                        min-height: 48px;
+                        font-size: 0.9375rem;
                     }
     
                     .q-slide-item {
                         border: 1px solid $brand;
-                        margin-top: 1.5rem;
+                        margin-top: 2rem;
     
                         .q-item {
                             padding: 0;
@@ -179,6 +208,15 @@
                                     border-left: 0 !important;
                                 }
                             }
+                        }
+                    }
+
+                    .btn-signup {
+                        font-size: 1.25rem;
+
+                        .q-btn__wrapper {
+                            min-height: 40px;
+                            padding: 0;
                         }
                     }
                 }

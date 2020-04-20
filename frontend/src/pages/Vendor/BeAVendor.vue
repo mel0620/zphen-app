@@ -23,9 +23,9 @@
                 <q-btn unelevated color="black" label="Login now"></q-btn>
             </div>
         </section>
-        <section class="steps">
-            <div class="c-card">
-                <div class="header-text">SELL IN <b>5</b> EASY <b>STEPS</b></div>
+        <section class="steps c-card">
+            <div class="q-pa-md">
+                <div class="header-text q-pb-md">SELL IN <b>5</b> EASY <b>STEPS</b></div>
                 <div class="stepper">
                     <div class="stepper__step">
                         <div class="stepper__number">1</div>
@@ -63,7 +63,7 @@
                     <div class="plan__feature-list">- Limited dashboard feature</div>
                 </div>
                 <div class="plan__action">
-                    <div class="plan__caption">Start selling your products online and manage your store</div>
+                    <div class="plan__caption">Start selling your products online<br>and manage your store</div>
                     <q-btn unelevated color="brand" class="q-mt-md" label="CHOOSE THIS PLAN"></q-btn>
                 </div>
             </div>
@@ -84,7 +84,7 @@
                     <div class="plan__feature-list">- Full dashboard access</div>
                 </div>
                 <div class="plan__action">
-                    <div class="plan__caption">Access additional dashboard features and track your sales online.</div>
+                    <div class="plan__caption">Access additional dashboard features<br>and track your sales online.</div>
                    <q-btn unelevated color="brand" class="q-mt-md" label="CHOOSE THIS PLAN"></q-btn>
                 </div>
             </div>

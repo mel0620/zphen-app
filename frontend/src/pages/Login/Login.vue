@@ -1,10 +1,8 @@
 <template>
-    <q-page class="container">
-
+    <q-page class="login-page container">
         <section class="ads-section">
             <ads v-for="(item, index) in ads" :key="index" :image_url="item.image_url"></ads>
         </section>
-
         <!-- LOGIN SECTION -->
         <section class="login-wrapper">
             <div class="content-header">
@@ -14,7 +12,7 @@
             <div class="content-body">
                 <form action="">
                     <div class="form-wrapper">
-                        <div class="form-group q-mb-md">
+                        <div class="form-group q-mb-lg">
                             <label class="text-black" for="number-email">Mobile Number or Email</label>
                             <q-input v-model="phone_or_email_input" 
                                 placeholder="Please enter your phone number or email"
@@ -33,22 +31,22 @@
                             >
                             </q-input>
                             <div class="full-width text-center q-mt-sm">
-                                <a href="javascript:" class="text-link italic">Forgot Password?</a>
+                                <a href="javascript:" style="font-size: 15px" class="text-link italic">Forgot Password?</a>
                             </div>
                         </div>
                     </div>
-                    <div class="form-wrapper">
+                    <div class="form-wrapper column justify-between">
                         <div class="form-group">
                             <div class="spacer"></div>
-                            <q-btn outline color="brand" class="full-width q-py-xs" label="I cannot login contact us"></q-btn>
+                            <q-btn outline color="brand" class="full-width" label="I cannot login contact us"></q-btn>
                         </div>
-                        <div class="form-group q-mt-lg q-pt-xs">
-                            <q-btn unelevated color="brand" class="full-width q-py-xs" label="Login"></q-btn>
+                        <div class="form-group" style="margin-bottom: 30px">
+                            <q-btn unelevated color="brand" class="full-width" label="Login"></q-btn>
                         </div>
                     </div>
                 </form>
-                <div class="d-flex justify-center q-mt-md">
-                    <div class="separator-text">OR LOGIN WITH</div>
+                <div class="d-flex justify-center">
+                    <div class="separator-text q-my-lg">OR LOGIN WITH</div>
                 </div>
                 <div class="login-with">
                     <q-btn unelevated no-caps color="fb" icon="img:./statics/facebook-white.svg" label="Facebook"></q-btn>

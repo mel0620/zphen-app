@@ -18,7 +18,7 @@
 }
 
 .text-link {
-    color: #00b1ff;
+    color: $info;
     text-decoration: none !important;
 
     &.italic {
@@ -26,7 +26,7 @@
     }
 
     &:hover {
-        color: #00b1ff;
+        color: $info;
     }
 }
 
@@ -44,4 +44,8 @@
 
 .bg-google-plus {
     background-color: $google-plus;
+}
+
+.no-cursor {
+    cursor: inherit;
 }
