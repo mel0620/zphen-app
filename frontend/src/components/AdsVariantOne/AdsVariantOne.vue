@@ -15,3 +15,16 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.ads-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px;
+    grid-gap: 0.625rem;
+    
+    @media screen and (max-width: 512px) {
+        grid-template-columns: 1fr;
+    }
+}
+</style>

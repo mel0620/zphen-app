@@ -108,23 +108,23 @@
 							</div>
 
 							<!-- VISITOR -->
-							<div class="right-actions">
+							<!-- <div class="right-actions">
 								<a href="javascript:" @click="$router.push('/signup')">Sign up</a>
 								<q-separator style="background: #1e1e1e; height: 20px" class="q-mx-sm" vertical></q-separator>
 								<a href="javascript:" @click="$router.push('/login')">
 									<span>Login</span>
 									<q-icon size="1.5em" name="mdi-account-circle"></q-icon>
 								</a>
-							</div>
+							</div> -->
 
 							<!-- LOGGED IN -->
 
-							<!-- <div class="right-actions__is-logged-in">
+							<div class="right-actions__is-logged-in">
 								<div class="user">
-									<a class="user__dropdown" href="javascript:">John Doe <q-icon size="1.5em" name="mdi-account-circle"></q-icon></a>
+									<a class="user__dropdown" href="javascript:">Stephen Reon Francisco <q-icon size="1.5em" name="mdi-account-circle"></q-icon></a>
 									<div class="user__menu">
 										<ul>
-											<li><a href="javascript:">My Profile</a></li>
+											<li><router-link :to="{ path: '/my-account/my-profile'}">My Account</router-link></li>
 											<li><a href="javascript:">My Orders</a></li>
 											<li><a href="javascript:">My Reviews</a></li>
 											<li><a href="javascript:">Sell Items</a></li>
@@ -132,7 +132,7 @@
 										</ul>
 									</div>
 								</div>
-							</div> -->
+							</div>
 						</div>
 					</div>
 				</div>

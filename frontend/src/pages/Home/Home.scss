@@ -184,17 +184,6 @@
 		}
 	}
 	
-	.ads-section {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 90px;
-		grid-gap: 0.625rem;
-		
-		@media screen and (max-width: 512px) {
-			grid-template-columns: 1fr;
-		}
-	}
-	
 	.accreditation {
 		margin-top: 0.625rem;
 		background-color: #fff;
@@ -221,7 +210,7 @@
 			}
 		}
 	}
-	
+		
 	.section-header {
 		display: flex;
 		justify-content: space-between;
