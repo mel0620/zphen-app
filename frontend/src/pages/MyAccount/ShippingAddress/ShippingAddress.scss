@@ -1,0 +1,115 @@
+.my-account-section--my-shipping {
+    .btn-action {
+        font-weight: 400;
+        .q-btn__wrapper {
+            min-width: 77px;
+            min-height: 30px;
+        }
+        &.btn-action--add {
+            .q-btn__wrapper {
+                min-width: 180px;
+                min-height: 30px;
+
+                .q-icon {
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+    .my-shipping {
+        display: grid;
+        grid-template-columns: 37.5rem 1fr;
+        grid-gap: 3.125rem;
+
+        &:first-child {
+            margin-bottom: 1.4375rem;
+        }
+
+         @media screen and (max-width: 1367px){
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1.5625rem;
+        }
+
+        .lists {
+            margin-left: 30px;
+            margin-top: 1.875rem;
+            .list {
+                margin-top: 1.875rem;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                &__label {
+                    font-size: 0.9375rem;
+                    font-weight: 300;
+                    margin-bottom: 0.9375rem;
+                }
+                &__value {
+                    font-size: 1.25rem;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .select-address {
+            display: grid;
+            grid-template-columns: 145px 1fr;
+            grid-gap: 1.25rem;
+
+            .q-select, .q-input {
+                .q-field__control {
+                    min-height: 30px;
+                    height: 30px;
+                    padding-right: 3px;
+
+                    .q-field__native {
+                        span {
+                            white-space: nowrap;
+                            color: $brand;
+                        }
+                    }
+                }
+            }
+            .q-field--auto-height.q-field--dense .q-field__control, .q-field--auto-height.q-field--dense .q-field__native {
+                min-height: 30px;
+            }
+            .q-field--dense .q-field__control, .q-field--dense .q-field__marginal {
+                height: 30px;
+                color: $brand;
+            }
+        }
+
+        .address-actions {
+            margin-top: 1.875rem;
+            display: flex;
+            justify-content: flex-end;
+
+            .q-btn {
+                font-size: 0.9375rem;
+                font-weight: 400;
+
+                .q-btn__wrapper {
+                    min-height: 1.875rem;
+                    min-width: 5.875rem;
+                    padding: 0;
+                    // padding-right: 5px;
+                    box-sizing: border-box;
+
+                    .mdi {
+                        margin-right: 5px;
+                    }
+                }
+
+                &:last-child {
+                    margin-left: 1.25rem;
+
+                    .q-btn__wrapper {
+                        min-width: 5.125rem;
+                    }
+                }
+            }
+        }
+    }
+}

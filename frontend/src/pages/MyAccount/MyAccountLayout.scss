@@ -60,7 +60,7 @@
                 &__body {
                     min-height: 19.0625rem;
                     background-color: #fff;
-                    padding: 1.875rem 4.375rem;
+                    padding: 30px 4.375rem;
 
                     .form-group {
                         &__label {
@@ -73,6 +73,13 @@
                             justify-content: space-between;
                             max-width: 275px;
                             margin-bottom: 8px;
+
+                            &.form-group__label--sm {
+                                font-size: 15px;
+                                font-weight: 300;
+                                max-width: 100%;
+                                color: $black;
+                            }
 
                             a {
                                 font-weight: 400;

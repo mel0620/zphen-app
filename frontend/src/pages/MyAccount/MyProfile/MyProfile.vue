@@ -3,8 +3,8 @@
         <div class="my-account-section__header">
             <div class="my-account-section__title">My Profile</div>
             <div class="my-account-section__actions">
-                <q-btn @click="is_edit = true" v-if="is_edit == false" class="btn-edit" outline dense color="info" label="Edit" icon="mdi-pencil"></q-btn>
-                <q-btn @click="is_edit = false" v-if="is_edit == true" class="btn-edit" outline dense color="info" label="Save" icon="mdi-content-save"></q-btn>
+                <q-btn @click="is_edit = true" v-if="is_edit == false" class="btn-action" outline dense color="info" label="Edit" icon="mdi-pencil"></q-btn>
+                <q-btn @click="is_edit = false" v-if="is_edit == true" class="btn-action" outline dense color="info" label="Save" icon="mdi-content-save"></q-btn>
             </div>
         </div>
         <div class="my-account-section__body">
