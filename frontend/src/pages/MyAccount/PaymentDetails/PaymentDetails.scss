@@ -71,6 +71,39 @@
     
             .q-tab-panel {
                 padding-top: 2rem;
+
+                .card-tab-holder {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    .note {
+        margin-top: 0.625rem;
+            
+        &__header {
+            min-height: 3.75rem;
+            padding: 0 3.125rem;
+            background-color: $brand-light;
+            display: flex;
+            align-items: center;
+
+            &-text {
+                font-size: 1.5625rem;
+            }
+        }
+
+        &__content {
+            padding: 1.875rem 4.375rem;
+            background-color: #fff;
+            min-height: 6.25rem;
+
+            p {
+                font-weight: 300;
+                font-size: 0.9375rem;
+                margin: 0;
             }
         }
     }
