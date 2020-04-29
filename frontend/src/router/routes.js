@@ -13,8 +13,9 @@ const routes = [
 			{ path: '/my-account',
 				component: () => import('pages/MyAccount/MyAccountLayout.vue'),
 				children: [
-					{ path: '/my-account/my-profile', component: () => import('pages/MyAccount/MyProfile/MyProfile.vue') },
-					{ path: '/my-account/my-shipping-address', component: () => import('pages/MyAccount/ShippingAddress/ShippingAddress.vue') }
+					{ path: '/my-account/my-profile', 			component: () => import('pages/MyAccount/MyProfile/MyProfile.vue') },
+					{ path: '/my-account/my-shipping-address',  component: () => import('pages/MyAccount/ShippingAddress/ShippingAddress.vue') },
+					{ path: '/my-account/my-payment-details',   component: () => import('pages/MyAccount/PaymentDetails/PaymentDetails.vue') },
 				]
 			},
 		]

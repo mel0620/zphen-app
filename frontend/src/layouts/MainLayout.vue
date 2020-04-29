@@ -295,12 +295,12 @@ export default {
 			},
 		],
 		customer_care_options: [
-			{ link_title: 'Help Center', link: ''},
+			{ link_title: 'Customer Service', link: ''},
 			{ link_title: 'How to Buy', link: ''},
 			{ link_title: 'Shipping & Delivery', link: ''},
-			{ link_title: 'International Product Policy', link: ''},
+			{ link_title: 'Product Policy', link: ''},
+			{ link_title: 'Payments', link: ''},
 			{ link_title: 'How to Return', link: ''},
-			{ link_title: 'Question?', link: ''},
 			{ link_title: 'Contact Us', link: ''},
 		],
 		zphen_options: [
@@ -309,8 +309,8 @@ export default {
 			{link_title: 'Terms & Conditions', link: ''},
 			{link_title: 'Privacy Policy', link: ''},
 			{link_title: 'Cookie Notice', link: ''},
-			{link_title: 'Press & Media', link: ''},
-			{link_title: 'Intellectual Property Protection', link: ''},
+			{link_title: 'Press Release & Media', link: ''},
+			{link_title: 'Intellectual Property', link: ''},
 		],
 		categories_options: [
             { 

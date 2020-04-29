@@ -1,5 +1,5 @@
 <template>
-    <div class="my-account-section my-account-section--profile">
+    <div class="my-account-section my-profile-section">
         <div class="my-account-section__header">
             <div class="my-account-section__title">My Profile</div>
             <div class="my-account-section__actions">

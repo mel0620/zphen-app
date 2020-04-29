@@ -1,5 +1,5 @@
 <template>
-    <div class="my-account-section my-account-section--my-shipping">
+    <div class="my-account-section my-shipping-address-section">
         <div class="my-account-section__header">
             <div class="my-account-section__title">My Shipping Address</div>
             <div v-if="is_add_address == false" class="my-account-section__actions">

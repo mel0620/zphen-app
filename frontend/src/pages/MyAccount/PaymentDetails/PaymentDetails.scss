@@ -1,0 +1,77 @@
+.payment-details-section {
+
+    .btn-action {
+        font-weight: 400;
+        .q-btn__wrapper {
+            min-width: 77px;
+            min-height: 30px;
+        }
+    }
+
+    .payment-details {
+        .tab-wrapper {
+            max-width: 60.6875rem;
+            margin: auto;
+
+            .q-tabs {
+                max-width: 850px;
+                margin: auto;
+            }
+
+            .q-tab {
+                min-height: 3.125rem;
+                min-width: 26.5625rem;
+
+                @media screen and (max-width: 1367px) {
+                    min-width: auto;
+                }
+            }
+    
+            .q-tabs__content {
+                border: 1px solid $brand;
+                background-color: $brand-light;
+                color: $brand;
+                overflow: inherit;
+
+                .q-tab__label {
+                    font-size: 1.25rem;
+                }
+            }
+    
+            .q-tab__indicator {
+                height: 100%;
+    
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -19px;
+                    left: 50%;
+                    border-top: solid 18px $brand;
+                    border-left: solid 18px transparent;
+                    border-right: solid 18px transparent;
+                    z-index: 5;
+                    transform-origin: left;
+                    opacity: 0;
+                }
+            }
+    
+            .q-tab--active {
+                .q-tab__content {
+                    color: #fff;
+                    z-index: 5;
+                }
+
+                .q-tab__indicator {
+                    &::after {
+                        transform: translateX(-50%);
+                        opacity: 1;
+                    }
+                }
+            }
+    
+            .q-tab-panel {
+                padding-top: 2rem;
+            }
+        }
+    }
+}
