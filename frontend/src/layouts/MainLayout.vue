@@ -125,7 +125,7 @@
 									<div class="user__menu">
 										<ul>
 											<li><router-link :to="{ path: '/my-account/my-profile'}">My Account</router-link></li>
-											<li><a href="javascript:">My Orders</a></li>
+											<li><router-link :to="{ path: '/my-account/my-orders'}">My Orders</router-link></li>
 											<li><a href="javascript:">My Reviews</a></li>
 											<li><a href="javascript:">Sell Items</a></li>
 											<li><a href="javascript:">Logout</a></li>

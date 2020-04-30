@@ -16,6 +16,7 @@ const routes = [
 					{ path: '/my-account/my-profile', 			component: () => import('pages/MyAccount/MyProfile/MyProfile.vue') },
 					{ path: '/my-account/my-shipping-address',  component: () => import('pages/MyAccount/ShippingAddress/ShippingAddress.vue') },
 					{ path: '/my-account/my-payment-details',   component: () => import('pages/MyAccount/PaymentDetails/PaymentDetails.vue') },
+					{ path: '/my-account/my-orders',   			component: () => import('pages/MyAccount/MyOrders/MyOrders.vue') },
 				]
 			},
 		]
