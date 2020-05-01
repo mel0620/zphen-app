@@ -22,7 +22,7 @@
                 min-height: 3.125rem;
                 min-width: 26.5625rem;
 
-                @media screen and (max-width: 1367px) {
+                @media screen and (max-width: $breakpoint-md) {
                     min-width: auto;
                 }
             }
@@ -93,6 +93,10 @@
             &-text {
                 font-size: 1.5625rem;
             }
+
+            @media screen and (max-width: $breakpoint-md) {
+                padding: 0 1.5625rem;
+            }
         }
 
         &__content {
@@ -104,6 +108,10 @@
                 font-weight: 300;
                 font-size: $base-fz;
                 margin: 0;
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                padding: 1.875rem 2.1875rem;
             }
         }
     }
