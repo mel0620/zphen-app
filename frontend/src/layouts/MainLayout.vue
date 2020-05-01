@@ -138,7 +138,7 @@
 				</div>
 				<div v-if="$route.path !== '/'" class="container">
 					<div class="header-toolbar-bottom">
-						<div @click="is_category_visible = !is_category_visible" class="dropdown-categories">
+						<div @click="is_sub_cat_visible = !is_category_visible" class="dropdown-categories">
 							<div class="dropdown-category-cta bg-brand">
 								<span>CATEGORIES</span>
 								<i class="mdi mdi-menu-down"></i>

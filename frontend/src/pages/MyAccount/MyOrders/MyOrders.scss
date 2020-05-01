@@ -1,0 +1,204 @@
+.my-orders-section {
+    overflow: hidden;
+    @import "../../../css/toem.scss";
+    
+    .my-account-section__body {
+        overflow: hidden;
+
+        //Grid table
+        .g-table {
+            overflow: auto;
+
+            &__head {
+                min-height: 3.75rem;
+                border-bottom: 1px solid #d1d1d1;
+
+                .g-table__row {
+                    display: grid;
+                    grid-template-columns: toem(205px) toem(130px) toem(126px) 1fr toem(80px) 1fr 1fr;
+                    grid-gap: 1.875rem;
+
+                    // @media screen and (max-width: $breakpoint-md){
+                    //     grid-template-columns: toem(205px) toem(130px) toem(126px) 1fr toem(80px) 1fr 1fr;
+                    // }
+
+                    .g-table__header {
+                        font-weight: 400;
+                        font-size: $base-fz;
+                        color: $brand;
+                        // border: 1px solid red;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+
+                        &:first-child {
+                            justify-self: flex-start;
+
+                            .q-field__control {
+                                min-width: 9.375rem;
+                                height: 30px !important;
+                                min-height: 30px !important;
+                            }
+
+                            .q-field--auto-height.q-field--dense .q-field__control, .q-field--auto-height.q-field--dense .q-field__native {
+                                min-height: 30px;
+                            }
+
+                            .q-field--dense .q-field__control, .q-field--dense .q-field__marginal {
+                                height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            &__body {
+                .g-table__row {
+                    padding: 1.875rem 0;
+                    border-bottom: 1px solid #d1d1d1;
+
+                    .g-table__datas {
+                        display: grid;
+                        grid-template-columns: toem(205px) toem(130px) toem(126px) 1fr toem(80px) 1fr 1fr;
+                        grid-gap: 1.875rem;
+                        justify-content: center;
+                        margin-bottom: 1.25rem;
+
+                        // @media screen and (max-width: $breakpoint-md){
+                        //     grid-template-columns: toem(205px) toem(130px) toem(126px) 1fr toem(80px) 1fr 1fr;
+                        // }
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        
+                        .g-table__data {
+                            width: 100%;
+                            padding-top: 1.5625rem;
+    
+                            &:first-child {
+                                padding-top: 0;
+                            }
+    
+                            &.g-table__data--column {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                            }
+    
+                            .text-wrapper {
+                                .label {
+                                    font-weight: 400;
+                                    font-size: $base-fz;
+                                    max-width: 80px;
+    
+                                    &.label--brand {
+                                        color: $brand;
+                                    }
+                                    &.label--light {
+                                        font-weight: 300;
+                                    }
+                                }
+                            }
+    
+                            .image-wrapper {
+                                justify-self: flex-end;
+                                width: 100%;
+    
+                                .q-img {
+                                    max-width: 100px;
+                                }
+                            }
+    
+                            .product-name {
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                font-size: $base-fz;
+                            }
+    
+                            .order-number, .quantity{
+                                font-size: $base-fz;
+                            }
+    
+                            .status {
+                                border-radius: 0.6875rem;
+                                font-size: 15px;
+                                max-width: 5rem;
+                                text-align: center;
+    
+                                &.status--delivered {
+                                    border: 1px solid $positive;
+                                    color: $positive;
+                                    background-color: $positive-light;
+                                }
+    
+                                &.status--cancelled {
+                                    border: 1px solid $negative;
+                                    color: $negative;
+                                    background-color: $negative-light;
+                                }
+                            }
+    
+                            .price {
+                                color: $brand-strong;
+                            }
+                        }
+                    }
+                    .g-table__data-footer {
+                        margin-top: 0.875rem;
+                        .text-wrapper {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .label {
+                                font-size: $base-fz;
+                                color: $brand;
+
+                                span {
+                                    color: $black;
+                                }
+                            }
+
+                            .total {
+                                color: $brand-strong;
+                                display: flex;
+                                
+                                span {
+                                    min-width: toem(110px);
+                                    text-align: center;
+                                    
+                                    @media screen and (max-width: $breakpoint-md){
+                                        margin-left: 1rem;
+                                        min-width: toem(57px);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .q-pagination {
+            .bg-primary {
+                background: $brand-light !important;
+                border: 1px solid $brand !important;
+            }
+            .q-btn {
+                font-size: 1.25rem;
+                font-weight: 400;
+                min-width: 30px !important;
+                border: 1px solid transparent;
+
+                .q-btn__wrapper {
+                    color: $black;
+                    width: 30px;
+                    min-height: 40px;
+                }
+                .q-btn__wrapper::before {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

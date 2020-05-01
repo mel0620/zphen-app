@@ -16,7 +16,7 @@
                 background-color: $brand;
                 color: #fff;
                 padding: 5px 15px;
-                font-size: 0.9375rem;
+                font-size: $base-fz;
             }
 
             &__links {
@@ -25,9 +25,9 @@
 
                 a {
                     text-decoration: none;
-                    font-size: 0.9375rem;
+                    font-size: $base-fz;
                     font-weight: 300;
-                    padding: 0.3125rem 0.9375rem;
+                    padding: 0.3125rem $base-fz;
                     border-bottom: 1px solid #d1d1d1;
                     color: $text-dark;
 
@@ -49,19 +49,27 @@
                     align-items: center;
                     justify-content: space-between;
                     min-height: 60px;
-                    padding: 0 3.125rem;
+                    padding: 0 50px;
                     background-color: $brand-light;
 
                     .my-account-section__title {
                         font-size: 1.5625rem;
                         color: $black;
                     }
+
+                    @media screen and (max-width: $breakpoint-md){
+                        padding: 0 25px;
+                    }
                 }
                 
                 &__body {
                     min-height: 19.0625rem;
                     background-color: #fff;
-                    padding: 30px 4.375rem;
+                    padding: 30px 70px;
+
+                    @media screen and (max-width: $breakpoint-md){
+                        padding: 30px 35px;
+                    }
 
                     .form-group {
                         &__label {

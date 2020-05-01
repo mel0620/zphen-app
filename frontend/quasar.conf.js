@@ -80,7 +80,8 @@ module.exports = function (/* ctx */) {
         'QTabPanel',
         'QSeparator',
         'QSlideItem',
-        'QAvatar'
+        'QAvatar',
+        'QPagination'
       ],
 
       directives: [

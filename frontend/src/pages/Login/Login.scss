@@ -31,7 +31,7 @@
 
             &__signup {
                 color: $black;
-                font-size: 0.9375rem;
+                font-size: $base-fz;
             }
         }
 
@@ -52,7 +52,7 @@
             .form-group {
                 
                 label {
-                    font-size: 0.9375rem;
+                    font-size: $base-fz;
                 }
 
                 .q-input {

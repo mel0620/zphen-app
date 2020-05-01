@@ -42,9 +42,9 @@
                 }
 
                 &__label {
-                    font-size: 0.9375rem;
+                    font-size: $base-fz;
                     font-weight: 300;
-                    margin-bottom: 0.9375rem;
+                    margin-bottom: $base-fz;
                 }
                 &__value {
                     font-size: 1.25rem;
@@ -87,7 +87,7 @@
             justify-content: flex-end;
 
             .q-btn {
-                font-size: 0.9375rem;
+                font-size: $base-fz;
                 font-weight: 400;
 
                 .q-btn__wrapper {

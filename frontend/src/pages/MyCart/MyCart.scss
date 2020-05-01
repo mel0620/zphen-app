@@ -56,7 +56,7 @@
                             .cart-item__label {
                                 min-width: 6.25rem;
                                 color: $brand;
-                                font-size: 0.9375rem;
+                                font-size: $base-fz;
                                 // border: 1px solid;
                             }
                         }
@@ -185,12 +185,12 @@
                         .list-item__delivery {
 
                             div {
-                                font-size: 0.9375rem;
+                                font-size: $base-fz;
                                 font-weight: 400;
                             }
 
                             p {
-                                font-size: 0.9375rem;
+                                font-size: $base-fz;
                                 font-weight: 300;
                                 line-height: 1rem;
                                 margin-top: 0.5rem;
@@ -232,11 +232,11 @@
 
                                 &__label {
                                     font-weight: 300;
-                                    font-size: 0.9375rem;
+                                    font-size: $base-fz;
                                 }
 
                                 &__value {
-                                    font-size: 0.9375rem;
+                                    font-size: $base-fz;
                                 }
                             }
                         }
@@ -314,7 +314,7 @@
         }
 
         .btn-load-more {
-            font-size: 0.9375rem;
+            font-size: $base-fz;
             font-weight: 400;
             min-width: 15.625rem;
 

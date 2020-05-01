@@ -31,7 +31,7 @@
 
             &__signup {
                 color: $black;
-                font-size: 0.9375rem;
+                font-size: $base-fz;
             }
         }
 
@@ -135,24 +135,24 @@
                 grid-gap: 3.125rem;
     
                 .label {
-                    font-size: 0.9375rem;
+                    font-size: $base-fz;
                 }
 
                 .form-wrapper {
     
                     .privacy-policy {
-                        font-size: 0.9375rem;
+                        font-size: $base-fz;
                     }
 
                     .q-checkbox__label {
                         margin-left: 8px;
-                        font-size: 0.9375rem;
+                        font-size: $base-fz;
                     }
 
                     .email-label-confirm {
                         margin-top: 1.5rem;
                         min-height: 48px;
-                        font-size: 0.9375rem;
+                        font-size: $base-fz;
                     }
     
                     .q-slide-item {
