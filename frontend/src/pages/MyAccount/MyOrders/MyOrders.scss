@@ -15,8 +15,8 @@
 
                 .g-table__row {
                     display: grid;
-                    grid-template-columns: toem(205px) toem(130px) toem(126px) 1fr toem(80px) 1fr 1fr;
-                    grid-gap: 1.875rem;
+                    grid-template-columns: 205px toem(130px) toem(126px) 1fr toem(80px) 1fr 1fr;
+                    grid-gap: 30px;
 
                     // @media screen and (max-width: $breakpoint-md){
                     //     grid-template-columns: toem(205px) toem(130px) toem(126px) 1fr toem(80px) 1fr 1fr;
@@ -59,7 +59,7 @@
 
                     .g-table__datas {
                         display: grid;
-                        grid-template-columns: toem(205px) toem(130px) toem(126px) 1fr toem(80px) 1fr 1fr;
+                        grid-template-columns: 205px toem(130px) toem(126px) 1fr toem(80px) 1fr 1fr;
                         grid-gap: 1.875rem;
                         justify-content: center;
                         margin-bottom: 1.25rem;
@@ -115,7 +115,7 @@
                                 font-size: $base-fz;
                             }
     
-                            .order-number, .quantity{
+                            .order-number, .quantity, .date, .price {
                                 font-size: $base-fz;
                             }
     
@@ -137,7 +137,7 @@
                                     background-color: $negative-light;
                                 }
                             }
-    
+                            
                             .price {
                                 color: $brand-strong;
                             }

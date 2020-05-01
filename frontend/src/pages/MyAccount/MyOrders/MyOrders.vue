@@ -216,7 +216,7 @@ export default {
     name: 'MyOrders',
     data: () => ({
         filter_select: 'All Orders',
-        pagination: 3
+        pagination: 2
     })
 }
 </script>
