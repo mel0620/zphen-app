@@ -1,0 +1,91 @@
+.my-reviews-section {
+    @import "../../../css/toem.scss";
+
+    .my-account-section__body {
+        padding: 30px 40px 30px 60px !important;
+
+        @media screen and (max-width: $breakpoint-md){ 
+            padding: 30px 20px 30px 35px !important;
+        }
+    }
+
+    .my-reviews {
+        .review {
+            &__item {
+                display: grid;
+                grid-template-columns: 100px 130px 110px 100px 100px 365px;
+                align-items: center;
+                padding: 1.25rem 0;
+                border-bottom: 1px solid #d1d1d1;
+                margin-bottom: 10px;
+                grid-gap: 30px;
+
+                @media screen and (max-width: $breakpoint-md){
+                    grid-template-columns: 100px 130px 110px 100px 100px 1fr;
+                    grid-gap: 15px;
+                }
+
+                &:first-child {
+                    padding-top: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .review__label {
+                    font-weight: 300;
+                    color: $brand;
+                    font-size: 0.9375rem;
+                    white-space: nowrap;
+                }
+                
+                .review__image {
+                    .q-img {
+                        width: 100px;
+                    }
+                }
+
+                .review__product-name {
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+
+                .review__prod-name, .review__sold-by {
+                    font-size: 0.9375rem;
+                }
+
+                .review__comment {
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    max-height: 100px;
+                    background-color: #f6f6f6;
+                    border: 1px solid #d1d1d1;
+                    padding: 8px 0.75rem 0;
+                    box-sizing: border-box;
+                }
+            }
+        }
+        .q-pagination {
+            .bg-primary {
+                background: $brand-light !important;
+                border: 1px solid $brand !important;
+            }
+            .q-btn {
+                font-size: 1.25rem;
+                font-weight: 400;
+                min-width: 30px !important;
+                border: 1px solid transparent;
+
+                .q-btn__wrapper {
+                    color: $black;
+                    width: 30px;
+                    min-height: 40px;
+                }
+                .q-btn__wrapper::before {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
