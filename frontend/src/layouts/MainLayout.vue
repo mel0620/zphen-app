@@ -126,8 +126,8 @@
 										<ul>
 											<li><router-link :to="{ path: '/my-account/my-profile'}">My Account</router-link></li>
 											<li><router-link :to="{ path: '/my-account/my-orders'}">My Orders</router-link></li>
-											<li><a href="javascript:">My Reviews</a></li>
-											<li><a href="javascript:">Sell Items</a></li>
+											<li><router-link :to="{ path: '/my-account/my-reviews'}">My Reviews</router-link></li>
+											<li><router-link :to="{ path: '/my-account/sell-items'}">Sell Items</router-link></li>
 											<li><a href="javascript:">Logout</a></li>
 										</ul>
 									</div>

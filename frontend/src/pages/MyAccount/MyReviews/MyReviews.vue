@@ -7,8 +7,8 @@
         <div class="my-account-section__body">
             <div class="my-reviews">
                 <div class="review">
-                    <review-loader v-if="is_loading"/>
-                    <div v-else class="review__item" v-for="n in 6" :key="n">
+                    <!-- <review-loader v-if="is_loading"/> -->
+                    <div class="review__item" v-for="n in 6" :key="n">
                         <div class="review__image">
                             <q-img src="https://www.apple.com/newsroom/images/product/iphone/standard/Apple_new-iphone-se-white_04152020_big.jpg.large.jpg"
                                 spinner-size="2rem"
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                 </div>
-                <div v-if="!is_loading" class="q-pt-lg flex justify-end">
+                <div class="q-pt-lg flex justify-end">
                     <q-pagination
                         v-model="pagination"
                         :max="5"
@@ -83,10 +83,10 @@ export default {
         prod_review_rating: 4,
         seller_review_rating: 4,
     }),
-    mounted() {
-        setTimeout(() => {
-            this.is_loading = false
-        },3000) 
-    }
+    // mounted() {
+    //     setTimeout(() => {
+    //         this.is_loading = false
+    //     },3000) 
+    // }
 }
 </script>
