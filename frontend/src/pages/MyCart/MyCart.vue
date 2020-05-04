@@ -113,6 +113,7 @@
                     v-for="(prod, index) in products" 
                     :key="index" 
                     :prod="prod"
+                    link="/product-details"
                 />
             </div>
             <div class="d-flex justify-center q-py-md q-mt-xl">

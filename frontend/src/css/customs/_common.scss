@@ -1,0 +1,27 @@
+// HOME_
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    
+    .section-title {
+        color: $black;
+        font-size: 1.25rem;
+    }
+    
+    .section-action {
+        text-decoration: none;
+        color: $brand;
+        font-size: 1.25rem;
+    }
+}
+
+// MY_CART || PRODUCT_DETAILS
+.btn-load-more {
+    font-size: $base-fz;
+    font-weight: 400;
+    min-width: 15.625rem;
+
+    .q-btn__wrapper {
+        min-height: 2.5rem;
+    }
+}

@@ -50,8 +50,22 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "../../css/toem.scss";
+
+.product-wrapper {
+    display: grid;
+    // grid-template-columns: repeat(5, 19.17%);
+    grid-template-columns: repeat(5, 18.4%);
+    // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 2%;
+    margin-top: 1rem;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+}
 
 .product-item {
     background-color: #fff;
@@ -183,4 +197,5 @@ export default {
         }
     }
 }
+
 </style>

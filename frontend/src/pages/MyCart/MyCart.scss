@@ -288,23 +288,6 @@
     .you-may-also-like {
         margin-top: 2rem;
 
-        .section-header {
-            display: flex;
-            justify-content: space-between;
-            
-            .section-title {
-                color: $black;
-                font-size: 1.25rem;
-            }
-            
-            .section-action {
-                text-decoration: none;
-                color: $brand;
-                font-size: 1.25rem;
-                font-weight: 400;
-            }
-        }
-
         .product-wrapper {
 			display: grid;
 			grid-template-columns: repeat(5, 18.4%);
@@ -312,15 +295,5 @@
 			grid-row-gap: 3%;
 			margin-top: 1rem;
         }
-
-        .btn-load-more {
-            font-size: $base-fz;
-            font-weight: 400;
-            min-width: 15.625rem;
-
-			.q-btn__wrapper {
-				min-height: 2.5rem;
-			}
-		}
     }
 }
