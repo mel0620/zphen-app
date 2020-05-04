@@ -189,74 +189,87 @@
 		<footer class="footer">
             <div class="container">
                 <div class="footer__top">
-                    <div class="footer-nav">
-                        <div class="footer-nav__title">Customer Care</div>
-                        <ul class="footer-nav__links">
-                            <li class="footer-nav__link" v-for="(link, index) in customer_care_options" :key="index">
-								<a :href="link">{{ link.link_title }}</a>
-							</li>
-                        </ul>
-                    </div>
-                    <div class="footer-nav">
+                    <div class="footer-nav-wrapper">
+						<div class="footer-nav">
+							<div class="footer-nav__title">Customer Care</div>
+							<ul class="footer-nav__links">
+								<li class="footer-nav__link" v-for="(link, index) in customer_care_options" :key="index">
+									<a :href="link">{{ link.link_title }}</a>
+								</li>
+							</ul>
+						</div>
+						<div class="copyright">&copy; zphen 2019</div>
+					</div>
+                    <!-- <div class="footer-nav">
                         <div class="footer-nav__title">Zphen</div>
                         <ul class="footer-nav__links">
                             <li class="footer-nav__link" v-for="(link, index) in zphen_options" :key="index">
 								<a :href="link">{{ link.link_title }}</a>
 							</li>
                         </ul>
+                    </div> -->
+                    <div class="footer-nav-wrapper">
+						<div class="footer-nav">
+							<div class="footer-nav__title">Follow Us</div>
+							<div class="social">
+								<a class="q-pr-md" href="javascript:">
+									<img src="statics/facebook.svg" alt="">
+								</a>
+								<a class="q-pr-md" href="javascript:">
+									<img src="statics/instagram.svg" alt="">
+								</a>
+								<a class="q-pr-md" href="javascript:">
+									<img src="statics/twitter.svg" alt="">
+								</a>
+								<a class="q-pr-md" href="javascript:">
+									<img src="statics/linkedin.svg" alt="">
+								</a>
+								<a class="q-pr-md" href="javascript:">
+									<img src="statics/youtube.svg" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="footer-nav">
+							<div class="footer-nav__title">Country Available</div>
+							<div class="social">
+								<a class="no-cursor" href="javascript:">
+									<img class="img-fluid" src="statics/phil.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="footer-nav">
+							<div class="footer-nav__title">Payment Methods</div>
+							<div class="social">
+								<a class="no-cursor" href="javascript:">
+									<img class="img-fluid" src="statics/visa.png" alt="">
+								</a>
+								<a class="no-cursor" href="javascript:">
+									<img class="img-fluid" src="statics/master.png" alt="">
+								</a>
+								<a class="no-cursor" href="javascript:">
+									<img class="img-fluid" src="statics/paypal.png" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+                    <div class="zphen-about-wrapper">
+                        <div class="zphen-about-top">
+							<div class="zphen-logo">
+								<img src="statics/logo-black.png" alt="">
+							</div>
+							<div class="zphen-about-text">
+								Zphen is an e-commerce platform that gives retail hardware stores an opportunity to increase sales, reach more customers and sell their goods and products online.<br><br>The website will provide our users a better online buying experience with our partners nationwide.
+							</div>
+						</div>
+						<div class="zphen-about-bottom">
+							<div class="subscribe-btn" v-ripple>
+								<div>Subscribe to our newsletter</div>
+								<button>
+									<q-icon size="25px" name="mdi-arrow-right"></q-icon>
+								</button>
+							</div>
+						</div>
                     </div>
-                    <div class="footer-nav">
-                        <div class="footer-nav__title">Follow Us</div>
-                        <div class="social">
-                            <a class="q-pr-md" href="javascript:">
-                                <img src="statics/facebook.svg" alt="">
-                            </a>
-                            <a class="q-pr-md" href="javascript:">
-                                <img src="statics/instagram.svg" alt="">
-                            </a>
-                            <a class="q-pr-md" href="javascript:">
-                                <img src="statics/twitter.svg" alt="">
-                            </a>
-                            <a class="q-pr-md" href="javascript:">
-                                <img src="statics/linkedin.svg" alt="">
-                            </a>
-                            <a class="q-pr-md" href="javascript:">
-                                <img src="statics/youtube.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer-nav">
-                        <div class="footer-nav__title">Download the App</div>
-                        <div class="social">
-                            <a href="javascript:">
-                                <img src="statics/download-android.png" alt="">
-                            </a>
-                            <a href="javascript:">
-                                <img src="statics/download-ios.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__bottom">
-                    <div class="footer-nav">
-                        <div class="footer-nav__title">Payment Methods</div>
-                        <img class="img-fluid"  src="statics/payment-methods.png" alt="">
-                    </div>
-                    <div class="footer-nav footer-nav--end">
-                        <div class="footer-nav__title">Available Countries</div>
-                        <div class="social">
-                            <a class="no-cursor" href="javascript:">
-                                <img class="img-fluid" src="statics/phil.png" alt="">
-                            </a>
-                            <a class="no-cursor" href="javascript:">
-                                <img class="img-fluid" src="statics/sing.png" alt="">
-                            </a>
-                            <a class="no-cursor" href="javascript:">
-                                <img class="img-fluid" src="statics/kor.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="copyright">&copy; zphen 2019</div>
                 </div>
             </div>
         </footer>
@@ -297,7 +310,7 @@ export default {
 		customer_care_options: [
 			{ link_title: 'Customer Service', link: ''},
 			{ link_title: 'How to Buy', link: ''},
-			{ link_title: 'Shipping & Delivery', link: ''},
+			{ link_title: 'Delivery', link: ''},
 			{ link_title: 'Product Policy', link: ''},
 			{ link_title: 'Payments', link: ''},
 			{ link_title: 'How to Return', link: ''},

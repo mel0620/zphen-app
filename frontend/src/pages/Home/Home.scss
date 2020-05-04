@@ -244,6 +244,10 @@
 			// grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 			grid-gap: 2%;
 			margin-top: 1rem;
+
+			@media screen and (max-width: $breakpoint-sm) {
+				grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+			}
 		}
 
 		.btn-load-more {
